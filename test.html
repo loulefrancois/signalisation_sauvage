@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<meta charset="utf-8" />
+
+
+<head>
+
+    <!-- Ce qui est écris sur l'onglet : -->
+    <title>Métiers invisibles</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/test.css" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap" rel="stylesheet">
+    <!-- JAVASCRIPT/QUERY -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+    <script src="/assets/js/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="carte">
+
+        <iframe width="100%" height="100%" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/la-carte-test_455732?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+        <p><a href="//umap.openstreetmap.fr/fr/map/la-carte-test_455732">Voir en plein écran</a></p>
+
+    </div>
+
+    <!-- affichage console -->
+    <section id="container">
+        <div id="forme">
+            <svg version="1.1" id="no-aspect-ratio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100%" width="100%" viewBox="0 0 144 72" preserveAspectRatio="none">
+
+                <defs class="undefined">
+                    <style class="undefined">
+                        .cls-1 {
+                            fill: #1f3c90;
+                            `
+                        }
+                    </style>
+                </defs>
+                <title class="undefined"> Fichier 3</title>
+                <g id="Calque_2" data-name="Calque 2" class="undefined">
+                    <g id="Calque_1-2" data-name="Calque 1" class="undefined">
+                        <polygon class="cls-1" points="108 18 108 18 108 18 96 24 90 27 72 36 90 45 96 48 108 54 108 54 108 54 108 72 120 60 126 54 126 54 144 36 126 18 126 18 126 18 126 18 120 12 108 0 108 18" class="undefined" />
+                        <path class="cls-1" d="M36 0 24 12l-6 6h0L0 36 18 54h0l6 6L36 72V54h0l12-6 6-3 18-9L54 27l-6-3L36 18h0Zm0 36h0Z" class="undefined" />
+                    </g>
+                </g>
+
+            </svg>
+        </div>
+    </section>
+
+    <!-- affichage console -->
+    <div id="log"></div>
+
+
+</body>
+
+
+<script>
+    // La console affiche la position de la souris dans la div container
+    $(container).on("mousemove", function(event) {
+        $("#log").text("pageX: " + event.pageX + ", pageY: " + event.pageY);
+    });
+
+    // Code pour la forme 1
+    if ($('#container').length > 0) {
+
+        $('#container').focus();
+
+        var vf_hover = function(m) {
+            var cursorX = m.pageX / $(this).width();
+            var cursorY = 1 - (m.pageY) / $(this).height();
+
+            var positionX = Math.floor(cursorX * 850);
+            var positionY = Math.floor(cursorY * 500);
+
+            var vfString = positionX + "px";
+            var vfStringHeight = positionY + "px";
+            $("#forme").css("width", vfString);
+            $("#forme").css("height", vfStringHeight);
+
+        }
+
+        $('#container').mousemove(vf_hover);
+    }
+
+    // Carte height automatique à la taille de l'écran
+    var ecranHeight = $(window).height();
+
+    $("#carte").css("height", ecranHeight);
+</script>
+
+
+</html>

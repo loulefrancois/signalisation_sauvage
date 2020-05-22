@@ -1,0 +1,90 @@
+.container_12 {
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+/* //////////////////////////////////////// */
+/* GÉNÉRAL */
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 0%;
+	margin-right: 0%;
+    box-sizing: border-box;
+    border: 1.5px solid blue;
+}
+
+/* //////////////////////////////////////// */
+/* GRID 12 */
+
+.container_12 .grid_1 {
+	width:8.333%;
+}
+
+.container_12 .grid_2 {
+	width:16.667%;
+}
+
+.container_12 .grid_3 {
+	width:25.0%;
+}
+
+.container_12 .grid_4 {
+	width:33.333%;
+}
+
+.container_12 .grid_5 {
+	width:41.667%;
+}
+
+.container_12 .grid_6 {
+	width:50.0%;
+}
+
+.container_12 .grid_7 {
+	width:58.333%;
+}
+
+.container_12 .grid_8 {
+	width:66.667%;
+}
+
+.container_12 .grid_9 {
+	width:75.0%;
+}
+
+.container_12 .grid_10 {
+	width:83.333%;
+}
+
+.container_12 .grid_11 {
+	width:91.667%;
+}
+
+.container_12 .grid_12 {
+	width:100.0%;
+}
+
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}

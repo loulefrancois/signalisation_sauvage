@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  text-align: center;
+  }
+  
+#container {
+  padding: 0;
+  border: 1px solid red;
+  width: 700px;
+  height: 200px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#forme {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  max-width: 700px;
+  min-width: 100px;
+  max-height: 200px;
+  min-height: 50px;
+  height: 125px;
+  width: 250px;
+}
+
+#carte {
+  height: 350px;
+}
