@@ -14,8 +14,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/grid_gruimier.css" />
+    <!--<link rel="stylesheet" href="css/grid_gruimier.css" />-->
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <!-- JAVASCRIPT/QUERY -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
     </script>
@@ -27,192 +27,264 @@
 
 <body>
 
-    <!-- //////////////////////////////////////// -->
-    <!-- HEADER -->
-    <h1>signalisation sauvage</h1>
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- /////////////////////// HEADER /////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
 
-    <h2>Carte collaborative des véloroutes toulousaines</h2>
+    <header>
+        <h1>signalisation <span class="mediasans-semicondensed-italic">sauvage</span></h1>
 
-    <p id="fleche"><a class="js-scrollTo" href="#navbar">la fleche</a></p>
+        <h2>carte collaborative des veloroutes toulousaines</h2>
 
-    <!-- //////////////////////////////////////// -->
-    <!-- CARTE -->
+        <div id="forme_01">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 294 46">
+                <defs>
+                </defs>
+                <title>Fichier 1</title>
+                <polygon class="cls-1" points="0 0 0 45.84 36.73 23 36.73 22.99 36.8 22.99 36.76 22.97 36.73 22.96 36.73 22.95 36.73 22.92 36.73 22.94 0 0" />
+                <polygon class="cls-1" points="36.87 0.15 73.54 23.03 36.87 45.99 73.6 45.99 73.6 45.99 73.7 46 110.33 23.07 110.2 23.07 110.2 22.92 110.2 22.92 73.59 0.15 36.87 0.15" />
+                <polygon class="cls-1" points="183.73 22.96 183.79 22.99 183.79 22.92 183.73 22.96" />
+                <path class="cls-1" d="M110.33,0l.23.15Zm36.61,0V.15H110.33l36.54,22.77L110.33,46h36.61v-.15L183.79,23l-.06,0Z" />
+                <path class="cls-1" d="M257.5.15h-.24l36.55,22.77L257.26,46h36.61V23l.13-.08-.13-.08V.15ZM257.26,0l.24.15Z" />
+                <polygon class="cls-1" points="183.8 0.15 220.47 23.03 183.8 45.99 220.54 45.99 220.54 45.99 220.64 46 257.26 23.07 257.14 23.07 257.14 22.92 257.14 22.92 220.53 0.15 183.8 0.15" />
+            </svg>
+        </div>
+    </header>
+
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- /////////////////////// CARTES /////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+
     <div id="carte">
 
         <iframe width="100%" height="100%" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/la-carte-test_455732?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
 
     </div>
 
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- /////////////////////// INTRO. /////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
 
-    <div id="navbar">test</div>
+    <!-- Ligne 1 -->
 
-    <!-- //////////////////////////////////////// -->
-    <!-- FORMES -->
+    <div id="forme_02">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1278.5 100" height="100%" width="100%" preserveAspectRatio="none">
+            <polygon class="cls-1" points="759.11 0 739.13 25 739.14 25 739.13 25 719.16 50 719.16 50 699.18 75 699.18 75 699.18 75.01 699.18 75 679.21 100 699.18 100 719.15 100 739.13 75 739.13 75 739.13 74.99 745.79 66.67 759.11 50 759.11 50 759.11 49.99 759.11 49.99 779.08 25 779.08 25 779.09 25 799.06 0 759.11 0" />
+            <polygon class="cls-1" points="779.09 75 779.09 75 779.08 75 772.43 83.33 759.11 100 779.08 100 799.06 100 799.06 75 799.06 50 779.09 75" />
+            <polygon class="cls-1" points="679.21 0 665.89 16.67 659.23 25 659.23 25 639.25 50 639.25 75 639.25 100 659.23 75 679.2 50 679.2 50 679.21 50 679.21 50 692.52 33.34 699.18 25 699.18 25 699.18 25 699.19 25 719.16 0 679.21 0" />
+            <polygon class="cls-1" points="938.9 0 918.92 0 898.95 25 898.95 25 898.95 25 878.97 50 878.97 50 859 75 859 75 859 75.01 858.99 75 839.02 100 859 100 878.96 100 898.94 75 898.94 75 898.94 75 905.6 66.67 918.92 50 918.92 50 918.92 49.99 918.92 50 938.9 25 938.9 25 938.9 25 958.88 0 938.9 0" />
+            <polygon class="cls-1" points="938.9 75 938.9 75 938.9 75 932.24 83.33 918.92 100 938.9 100 958.87 100 958.87 75 958.87 50 938.9 75" />
+            <polygon class="cls-1" points="859 0 839.02 0 825.7 16.67 819.04 25 819.04 25 799.06 50 799.06 75 799.06 100 819.04 75 839.01 50 839.01 50 839.02 50 839.02 50 852.34 33.34 858.99 25 858.99 25 859 25 859 25 878.98 0 859 0" />
+            <polygon class="cls-1" points="1078.73 0 1058.76 25 1058.76 25 1058.76 25 1038.78 50 1038.78 50 1018.81 75 1018.81 75 1018.81 75.01 1018.8 75 998.83 100 1018.81 100 1038.77 100 1058.75 75 1058.75 75 1058.76 74.99 1065.41 66.67 1078.73 50 1078.73 50 1078.73 49.99 1078.73 49.99 1098.71 25 1098.71 25 1098.71 25 1118.69 0 1078.73 0" />
+            <polygon class="cls-1" points="1098.71 75 1098.71 75 1098.71 75 1092.05 83.33 1078.73 100 1098.71 100 1118.69 100 1118.69 75 1118.69 50 1098.71 75" />
+            <polygon class="cls-1" points="998.83 0 985.51 16.67 978.85 25 978.85 25 958.88 50 958.88 75 958.88 100 978.85 75 998.83 50 998.83 50 998.83 50 998.83 50 1012.15 33.34 1018.81 25 1018.8 25 1018.81 25 1018.81 25 1038.79 0 998.83 0" />
+            <polygon class="cls-1" points="1258.52 0 1238.55 0 1218.57 25 1218.58 25 1218.57 25 1198.6 50 1198.59 50 1178.62 75 1178.62 75 1178.62 75.01 1178.62 75 1158.64 100 1178.62 100 1198.59 100 1218.57 75 1218.57 75 1218.57 75 1225.23 66.67 1238.55 50 1238.55 50 1238.55 49.99 1238.55 50 1258.52 25 1258.52 25 1258.52 25 1278.5 0 1258.52 0" />
+            <polygon class="cls-1" points="1258.52 75 1258.53 75 1258.52 75 1251.86 83.33 1238.55 100 1258.52 100 1278.5 100 1278.5 50 1258.52 75" />
+            <polygon class="cls-1" points="1178.62 0 1158.64 0 1145.33 16.67 1138.67 25 1138.66 25 1118.69 50 1118.69 75 1118.69 100 1138.67 75 1158.64 50 1158.64 50 1158.64 50 1158.64 50 1171.96 33.34 1178.62 25 1178.62 25 1178.62 25 1178.63 25 1198.6 0 1178.62 0" />
+            <polygon class="cls-1" points="119.86 0 99.89 25 99.89 25 99.88 25 79.91 50 79.91 50 59.94 75 59.94 75 59.94 75.01 59.93 75 39.96 100 59.94 100 79.9 100 99.88 75 99.88 75 99.88 74.99 106.54 66.67 119.86 50 119.86 50 119.86 49.99 119.86 49.99 139.83 25 139.83 25 139.84 25 159.81 0 119.86 0" />
+            <polygon class="cls-1" points="139.84 75 139.84 75 139.83 75 133.18 83.33 119.86 100 139.83 100 159.81 100 159.81 75 159.81 50 139.84 75" />
+            <polygon class="cls-1" points="39.96 0 26.64 16.67 19.98 25 19.98 25 0 50 0 75 0 100 19.98 75 39.95 50 39.95 50 39.96 50 39.96 50 53.27 33.34 59.93 25 59.93 25 59.94 25 59.94 25 79.91 0 39.96 0" />
+            <polygon class="cls-1" points="299.65 0 279.67 0 259.7 25 259.7 25 259.69 25 239.72 50 239.72 50 219.75 75 219.75 75 219.75 75.01 219.74 75 199.77 100 219.75 100 239.71 100 259.69 75 259.69 75 259.69 75 266.35 66.67 279.67 50 279.67 50 279.67 49.99 279.67 50 299.65 25 299.65 25 299.65 25 319.63 0 299.65 0" />
+            <polygon class="cls-1" points="299.65 75 299.65 75 299.64 75 292.99 83.33 279.67 100 299.64 100 319.62 100 319.62 75 319.62 50 299.65 75" />
+            <polygon class="cls-1" points="219.75 0 199.77 0 186.45 16.67 179.79 25 179.79 25 159.81 50 159.81 75 159.81 100 179.79 75 199.77 50 199.76 50 199.77 50 199.77 50 213.09 33.34 219.74 25 219.74 25 219.75 25 219.75 25 239.73 0 219.75 0" />
+            <polygon class="cls-1" points="439.48 0 419.51 25 419.51 25 419.51 25 399.53 50 399.53 50 379.56 75 379.56 75 379.56 75.01 379.55 75 359.58 100 379.56 100 399.52 100 419.5 75 419.5 75 419.5 74.99 426.16 66.67 439.48 50 439.48 50 439.48 49.99 439.48 49.99 459.46 25 459.46 25 459.46 25 479.44 0 439.48 0" />
+            <polygon class="cls-1" points="459.46 75 459.46 75 459.46 75 452.8 83.33 439.48 100 459.46 100 479.44 100 479.44 75 479.44 50 459.46 75" />
+            <polygon class="cls-1" points="359.58 0 346.26 16.67 339.6 25 339.6 25 319.63 50 319.63 75 319.63 100 339.6 75 359.58 50 359.58 50 359.58 50 359.58 50 372.9 33.34 379.56 25 379.55 25 379.56 25 379.56 25 399.54 0 359.58 0" />
+            <polygon class="cls-1" points="619.27 0 599.29 0 579.32 25 579.33 25 579.32 25 559.35 50 559.35 50 539.37 75 539.37 75 539.37 75.01 539.37 75 519.39 100 539.37 100 559.34 100 579.31 75 579.32 75 579.32 75 585.98 66.67 599.29 50 599.29 50 599.29 49.99 599.3 50 619.27 25 619.27 25 619.27 25 639.25 0 619.27 0" />
+            <polygon class="cls-1" points="619.27 75 619.28 75 619.27 75 612.61 83.33 599.29 100 619.27 100 639.25 100 639.25 75 639.25 50 619.27 75" />
+            <polygon class="cls-1" points="539.37 0 519.39 0 506.08 16.67 499.42 25 499.41 25 479.44 50 479.44 75 479.44 100 499.42 75 519.39 50 519.39 50 519.39 50 519.39 50 532.71 33.34 539.37 25 539.37 25 539.37 25 539.37 25 559.35 0 539.37 0" />
+        </svg>
+    </div>
 
-    <div class="container_12">
+    <!-- Ligne 2 -->
+    <div id="lacarte">
+        <p>la carte</p>
+    </div>
 
-        <div class="grid_1">
-            <p>1</p>
+    <div id="texteintroligne2">
+        <p>
+            Permet de aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae. Cid et ad quisti nonsequam voluptas millorem aut as ariatiunt andae aliquas sum veria dolupta aditaectias expe conem faciass itatur. Is aspitatiusci totassunt es doluptas rem aut faciis iur ad ut inctur Quia sandemo ssequam reritas reptatum nonsequo eossus porum.
+        </p>
+    </div>
+
+    <div id="contribuer">
+        <div id="textecontribuer">
+            <p>contribuer</p>
         </div>
-        <div class="grid_1">
-            <p>2</p>
-        </div>
-        <div class="grid_1">
-            <p>3</p>
-        </div>
-        <div class="grid_1">
-            <p>bla</p>
-        </div>
-        <div class="grid_1">
-            <p>bla</p>
-        </div>
-        <div class="grid_1">
-            <p>bla</p>
-        </div>
-        <div class="grid_1">
-            <p>bla</p>
-        </div>
-        <div class="grid_1">
-            <p>bla</p>
-        </div>
-        <div class="grid_1">
-            <p>bla</p>
-        </div>
-        <div class="grid_1">
-            <p>bla</p>
-        </div>
-        <div class="grid_1">
-            <p>bla</p>
-        </div>
-        <div class="grid_1">
-            <p>bla</p>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 518 154" preserveAspectRatio="none" width="100%" height="100%">
+            <path class="cls-1" d="M0,0,40,77,0,154H40L80,77,40,0ZM518,0H80l40,77L80,154H518Z" />
+        </svg>
+    </div>
+
+    <!-- Ligne 3 -->
+
+    <div id="formeligne3">
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.69 154" preserveAspectRatio="none" width="100%" height="100%">
+            <polygon class="cls-1" points="0 0 26.42 76.99 26.42 77 26.43 77 52.85 153.99 52.85 154 79.27 77.01 105.69 0 0 0" />
+        </svg>
+    </div>
+
+    <div id="texteintroligne3">
+        <p>La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae. Cid et ad quisti nonsequam voluptas millorem aut as ariatiunt andae aliquas sum veria dolupta aditaectias expe conem faciass itatur Is aspitatiusci totassunt es doluptas rem aut faciis iur ad ut inctur Quia sandemo ssequam reritas reptatum</p>
+    </div>
+
+    <div id="systemedepeinture">
+        <p>le systeme de peinture</p>
+    </div>
+
+    <!-- Ligne 4 -->
+
+    <div id="effetapparitionligne4et5">
+
+        <div id="formeligne4">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 391" height="100%" width="100%" preserveAspectRatio="none">
+                <polygon class="cls-1" points="0 0 0 97.75 0 195.5 160.01 195.5 319.97 195.5 320 195.48 160.02 97.75 160.01 97.75 160.01 97.75 0 0" />
+                <polygon class="cls-1" points="639.97 97.75 640 195.49 640.01 195.49 640.01 195.5 799.98 195.5 959.97 195.5 959.97 195.49 853.31 130.34 799.98 97.76 799.96 97.75 639.95 0 639.97 97.75" />
+                <polygon class="cls-1" points="320.03 0 320.03 97.75 320.03 97.76 320.03 195.47 426.64 130.32 479.96 97.75 479.98 97.73 479.99 97.73 639.95 0 320.03 0" />
+                <polygon class="cls-1" points="853.36 260.68 800.03 293.25 800.01 293.27 799.98 293.29 640.05 391 799.98 391 959.97 391 959.97 293.25 959.97 293.24 959.97 195.53 853.36 260.68" />
+                <polygon class="cls-1" points="639.99 195.5 480 195.5 320.04 195.5 426.69 260.66 480.01 293.23 480.03 293.24 480.05 293.25 640.05 391 640.02 293.25 640 195.5 639.99 195.5" />
+                <polygon class="cls-1" points="319.97 195.5 160.01 293.24 160.01 293.25 160.03 293.26 160.01 293.26 159.97 293.26 0 391 160.01 391 320.02 391 320.02 293.25 319.97 293.25 320.02 293.24 320.02 195.5 319.97 195.5" />
+                <polygon class="cls-1" points="959.97 0 959.97 97.75 960.02 97.75 959.97 97.76 959.97 195.49 959.98 195.5 960.02 195.5 1119.99 97.76 1119.99 97.76 1119.98 97.75 1119.99 97.75 1120.01 97.75 1280 0 959.97 0" />
+                <polygon class="cls-1" points="1119.99 195.5 960.02 195.5 960 195.51 1119.99 293.25 1280 391 1280 195.5 1119.99 195.5" />
+            </svg>
+
         </div>
 
-        <div class="grid_3">signes de déplacement</div>
-        <div class="grid_9">
+        <!-- Ligne 5 -->
 
-            <div id="log">bla</div>
-        </div>
+        <div id="ligne5">
 
-        <!--  TEST TEST TEST TEST TEST TEST TEST TEST TEST -->
+            <div id="ligne5formegauche">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 86.6" height="100%" width="100%" preserveAspectRatio="none">
+                    <polygon class="cls-1" points="75 43.3 0 0 0 86.6 75 43.3" />
+                </svg>
+            </div>
 
-        <div class="grid_12">
+            <div id="textesousformeligne4">
+                <p>
+                    La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae. Cid et ad quisti nonsequam voluptas millorem aut as ariatiunt andae aliquas sum veria dolupta aditaectias expe conem faciass itatur Is aspitatiusci totassunt es doluptas rem aut faciis iur ad ut inctur Quia sandemo ssequam reritas reptatum nonsequo eossus porum, net acepere, te conemodi sediscidit et, torunt od quostibus incto vollore ruptate omnis sam qui re, consequis reped eici te eos aut que paritae magnihit voloritis illore. La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae. Cid et ad quisti nonsequam voluptas millorem aut as ariatiunt andae aliquas sum veria dolupta aditaectias expe conem faciass itatur Is aspitatiusci totassunt es doluptas rem aut faciis iur ad ut inctur Quia sandemo ssequam reritas reptatum nonsequo eossus porum, net acepere, te conemodi sediscidit et, torunt od quostibus incto vollore ruptate omnis sam qui re, consequis reped eici te eos aut que paritae magnihit voloritis illore. La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae. Cid et ad quisti nonsequam voluptas millorem aut as ariatiunt andae aliquas sum veria dolupta aditaectias expe conem faciass itatur Is aspitatiusci totassunt es doluptas rem aut faciis iur ad ut inctur Quia sandemo ssequam reritas reptatum nonsequo eossus porum, net acepere, te conemodi sediscidit et, torunt od quostibus incto vollore ruptate omnis sam qui re, consequis reped eici te eos aut que paritae magnihit voloritis illore. La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae.
+                </p>
+            </div>
 
-            <div id="texteauhover">
-
-                <img id="formesurtextelong" src="image/test_forme_hover.png" />
-                <div id="triangle-code-gauche"></div>
-                <p id="textelongsousforme">je suis le texte qui apparaît sous la forme</p>
-                <div id="triangle-code-droite"></div>
-
+            <div id="ligne5formedroite">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 86.6" height="100%" width="100%" preserveAspectRatio="none">
+                    <polygon class="cls-1" points="0 43.3 75 86.6 75 0 0 43.3" />
+                </svg>
             </div>
 
         </div>
 
-        <!--  TEST TEST TEST TEST TEST TEST TEST TEST TEST -->
-
-        <!-- Forme 1 -->
-        <div class="grid_9">
-
-            <section id="container">
-                <div id="forme">
-                    <svg version="1.1" id="no-aspect-ratio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100%" width="100%" viewBox="0 0 144 72" preserveAspectRatio="none">
-
-                        <defs class="undefined">
-                            <style class="undefined">
-                                .cls-1 {
-                                    fill: blue;
-                                }
-                            </style>
-                        </defs>
-                        <title class="undefined"> Fichier 3</title>
-                        <g id="Calque_2" data-name="Calque 2" class="undefined">
-                            <g id="Calque_1-2" data-name="Calque 1" class="undefined">
-                                <polygon class="cls-1" points="108 18 108 18 108 18 96 24 90 27 72 36 90 45 96 48 108 54 108 54 108 54 108 72 120 60 126 54 126 54 144 36 126 18 126 18 126 18 126 18 120 12 108 0 108 18" class="undefined" />
-                                <path class="cls-1" d="M36 0 24 12l-6 6h0L0 36 18 54h0l6 6L36 72V54h0l12-6 6-3 18-9L54 27l-6-3L36 18h0Zm0 36h0Z" class="undefined" />
-                            </g>
-                        </g>
-
-                    </svg>
-                </div>
-            </section>
-
-        </div>
-
-        <div class="grid_3">
+    </div>
 
 
-            <div id="texteforme1">
-                <h3>VR-FL01</h3>
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- /////////////////////// FORMES /////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+
+
+    <div id="lessignesdedeplacement">
+        <p>
+            les signes de deplacement
+        </p>
+    </div>
+
+    <div id="textesignesdeplacement">
+        <p>
+            La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae. Cid et ad quisti nonsequam voluptas millorem aut as ariatiunt andae aliquas sum veria dolupta aditaectias expe conem faciass.
+        </p>
+    </div>
+
+    <div id="formeintrosignedeplacement">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217.04 101" height="100%" width="100%" preserveAspectRatio="none">
+            <path class="cls-1" d="M217,101h-4.75l-.2-.1L144.26,68.62,109.92,101h-2.8L72.78,68.62,4.74,101H0L53.56,50.5,0,0H4.74L5,.1,72.78,32.38,107.12,0h2.8l34.34,32.38L212.29,0H217L163.48,50.5ZM109.52,52.08V98.63l32.8-30.93ZM74.71,67.7l32.81,30.93V52.08Zm71.11-.55,65.42,31.14L162,51.87ZM55,51.87,5.79,98.29,71.22,67.15Zm55.82-1.37,33,15.72L160.56,50.5,143.88,34.78Zm-54.36,0L73.15,66.22l33-15.72-33-15.72Zm89.34-16.65L162,49.13,211.24,2.71ZM5.79,2.71,55,49.13l16.2-15.28Zm103.73-.34V48.92l32.8-15.62ZM74.71,33.3l32.81,15.62V2.37Z" />
+        </svg>
+    </div>
+
+    <!-- Forme 1 -->
+    <div class="blocformewidth">
+        <section id="container">
+            <div id="forme">
+                <svg version="1.1" id="no-aspect-ratio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 144 72">
+                    <polygon class="cls-1" points="108 18 108 18 108 18 96 24 90 27 72 36 90 45 96 48 108 54 108 54 108 54 108 72 120 60 126 54 126 54 144 36 126 18 126 18 126 18 126 18 120 12 108 0 108 18" class="undefined" />
+                    <path class="cls-1" d="M36 0 24 12l-6 6h0L0 36 18 54h0l6 6L36 72V54h0l12-6 6-3 18-9L54 27l-6-3L36 18h0Zm0 36h0Z" class="undefined" />
+                </svg>
             </div>
+        </section>
+    </div>
 
+    <div class="bloctextwidth">
+        <div class="texteforme">
+            <p>VR-FL01</p>
         </div>
-
-        <!-- Forme 2 -->
-        <div class="grid_9">
-            <section id="container2">
-                <div id="forme2">
-                    <svg version="1.1" id="no-aspect-ratio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100%" width="100%" viewBox="0 0 144 72" preserveAspectRatio="none">
-
-                        <defs class="undefined">
-                            <style class="undefined">
-                                .cls-1 {
-                                    fill: blue;
-                                    `
-                                }
-                            </style>
-                        </defs>
-                        <title class="undefined"> Fichier 3</title>
-                        <g id="Calque_2" data-name="Calque 2" class="undefined">
-                            <g id="Calque_1-2" data-name="Calque 1" class="undefined">
-                                <polygon class="cls-1" points="108 18 108 18 108 18 96 24 90 27 72 36 90 45 96 48 108 54 108 54 108 54 108 72 120 60 126 54 126 54 144 36 126 18 126 18 126 18 126 18 120 12 108 0 108 18" class="undefined" />
-                                <path class="cls-1" d="M36 0 24 12l-6 6h0L0 36 18 54h0l6 6L36 72V54h0l12-6 6-3 18-9L54 27l-6-3L36 18h0Zm0 36h0Z" class="undefined" />
-                            </g>
-                        </g>
-
-                    </svg>
-                </div>
-            </section>
-        </div>
-
-        <div class="grid_3">
-            <div id="texteforme2">
-                <h3>VR-FMX05</h3>
-            </div>
-        </div>
-
-    </div> <!-- Fin container_12 -->
-
-
-
-
-
-    <!-- //////////////////////////////////////// -->
-    <!-- TEXTE -->
-    <div class="container_12">
-
-        <div class="grid_12">
-            <!-- affichage console -->
-
-            <p class="onsenfout">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a risus et mi posuere dignissim. Phasellus finibus, lorem quis scelerisque gravida, sapien arcu porttitor sem, id vulputate turpis magna vel orci. Integer mollis ex ac nisi commodo, sed fermentum ante sodales. Nulla facilisi. In luctus lacus orci, at cursus tellus semper at. Proin posuere arcu a ullamcorper tincidunt. Sed id elit tristique mi tempor dignissim. Proin pretium neque a interdum pharetra. Praesent id faucibus nisi, sed tristique justo. Integer mollis velit dui, aliquam accumsan risus fermentum id. Ut a pulvinar eros, ac lacinia tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras posuere commodo mauris ac consequat. Nunc at enim tempus, tristique magna vel, tincidunt tellus. Proin laoreet nisl eget neque fermentum, sit amet tincidunt turpis congue.
-
-                Nullam gravida nec tellus quis accumsan. Quisque non bibendum lectus. Pellentesque vitae venenatis ipsum, et tempor risus. Fusce eget porta dui, nec mollis mi. Curabitur vitae cursus ipsum. Quisque sodales lacus erat, ut aliquet augue gravida congue. Sed sed urna porttitor, convallis lorem non, dictum ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In laoreet volutpat rhoncus. Nullam commodo neque sed elit egestas, at dapibus nisl dignissim. Phasellus placerat risus enim, in accumsan nulla pretium sodales. Sed vehicula nisi tortor.
-
-                Proin luctus sodales lectus a auctor. Integer egestas fermentum ullamcorper. Aliquam sagittis, nulla ac venenatis faucibus, lorem turpis condimentum risus, eu eleifend risus est nec risus. Etiam lorem enim, fringilla vel urna non, tincidunt vehicula risus. Nulla facilisi. Duis ut egestas ex. Praesent maximus, nulla sed finibus imperdiet, leo enim consequat libero, sit amet viverra orci ante sit amet orci. Nulla quis elit urna. Sed vitae malesuada neque, non consectetur diam.
-
-                Quisque tempus pellentesque nisi, ut accumsan est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt posuere diam, quis egestas risus. Morbi a egestas lectus. Morbi lacus libero, malesuada a nulla eget, placerat mattis augue. Quisque sit amet hendrerit nulla, ac feugiat velit. Sed nisi est, aliquet vitae lorem eget, rhoncus pharetra leo. Duis ac neque sit amet odio cursus varius at sollicitudin orci. Suspendisse et tincidunt nisi. Ut auctor interdum mauris nec euismod. Duis ultricies risus quis erat elementum, ac placerat dolor lacinia. Vivamus nec tristique lacus, vitae lacinia sapien. Nullam vel turpis a mauris dictum scelerisque id in lorem. Aliquam accumsan augue quis pharetra dapibus. Phasellus est turpis, molestie rutrum justo vel, iaculis viverra dui.
-
-                Cras ut mollis nisi, vitae suscipit dolor. Duis facilisis molestie commodo. Nunc id nisl ut purus porta lacinia cursus eu dui. Cras ac turpis at turpis gravida molestie. Nullam sodales enim non vestibulum faucibus. Nullam auctor elementum massa. Donec vulputate, neque eget eleifend interdum, tellus felis porta quam, eu faucibus turpis ante et purus. Maecenas sapien nunc, pretium eget euismod nec, faucibus ut sem. Donec semper orci et risus consectetur, et tincidunt enim pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
+        <p class="texteexplicationforme">
+            La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae. La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae.
+        </p>
+        <div class="boutonpdf">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.6 27" height="100%" width="100%" preserveAspectRatio="none">
+                <path class="cls-1" d="M10.8,10.8ZM21.6,0,16.2,5.4l-5.4,5.4h0L5.4,5.4h0L0,0,2.7,5.4l.9,1.8,1.8,3.6h0l1.8,3.6.9,1.8,2.7,5.4,2.7-5.4.9-1.8,1.8-3.6h0L18,7.2l.9-1.8Z" />
+                <rect class="cls-1" y="21.6" width="21.6" height="5.4" />
+            </svg>
         </div>
     </div>
+
+    <!-- Forme 2 -->
+
+ 
+    
+    <div class="bloctextwidth">
+        <div class="texteforme" style="float: right; width: 400px;">
+            <p style="float: right;">VR-FMX05</p>
+        </div>
+        <p class="texteexplicationforme">
+            La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae. La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae.
+        </p>
+        <div class="boutonpdf" style="right: 0;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.6 27" height="100%" width="100%" preserveAspectRatio="none">
+                <path class="cls-1" d="M10.8,10.8ZM21.6,0,16.2,5.4l-5.4,5.4h0L5.4,5.4h0L0,0,2.7,5.4l.9,1.8,1.8,3.6h0l1.8,3.6.9,1.8,2.7,5.4,2.7-5.4.9-1.8,1.8-3.6h0L18,7.2l.9-1.8Z" />
+                <rect class="cls-1" y="21.6" width="21.6" height="5.4" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="blocformewidth">
+        <section id="container2">
+            <div id="forme2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 339.89 169.96" height="100%" width="100%" preserveAspectRatio="none">
+                    <polygon class="cls-1" points="339.89 0 297.41 21.25 283.24 28.33 254.92 42.49 254.91 42.49 226.59 56.66 212.43 63.74 169.95 84.98 169.95 84.98 212.43 106.22 226.6 113.31 254.91 127.47 254.92 127.47 283.24 141.63 297.4 148.71 339.89 169.96 297.4 127.47 297.4 127.47 297.4 127.47 297.4 127.47 254.92 84.99 254.91 85 254.91 84.98 254.91 84.98 254.91 84.98 254.93 84.98 297.4 42.49 297.4 42.49 297.4 42.49 297.4 42.49 297.41 42.49 339.89 0" />
+                    <polygon class="cls-1" points="0 0 42.49 42.49 42.49 42.49 42.49 42.49 42.49 42.49 84.97 84.97 84.98 84.97 84.98 84.98 84.98 84.98 84.98 84.98 84.97 84.98 42.49 127.47 42.49 127.47 42.49 127.47 42.49 127.47 42.48 127.47 0 169.96 42.49 148.72 56.65 141.63 84.97 127.47 84.98 127.47 113.3 113.31 127.46 106.22 169.94 84.98 169.94 84.98 127.46 63.73 113.29 56.65 84.98 42.49 84.97 42.49 56.65 28.33 42.49 21.25 0 0" />
+                </svg>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
 
 </body>
 
 
-<!-- //////////////////////////////////////// -->
-<!-- SCRIPT -->
+<!-- ////////////////////////////////////////////////////// -->
+<!-- ////////////////////////////////////////////////////// -->
+<!-- /////////////////////// SCRIPT /////////////////////// -->
+<!-- ////////////////////////////////////////////////////// -->
+<!-- ////////////////////////////////////////////////////// -->
 
 <script>
     // La console affiche la position de la souris dans la div container
@@ -222,7 +294,7 @@
 
     // Width container
     $(document).ready(function() {
-        var widthContainerForme = $(".grid_9").width() + "px";
+        var widthContainerForme = $(".blocformewidth").width() + "px";
         $('#container').width(widthContainerForme);
         $('#container2').width(widthContainerForme);
         $('#container3').width(widthContainerForme);
@@ -317,17 +389,9 @@
     var ecranWidth = $(window).width();
 
     // Carte height automatique à la taille de l'écran
-    $("#carte").css("height", ecranHeight);
-
-    // Position de la flèche centrée
-    var positionFlecheHorizontale = ecranWidth / 2 - 60;
-    $("#fleche").css("left", positionFlecheHorizontale);
-    var positionFlecheVerticale = ecranHeight - 60;
-    $("#fleche").css("top", positionFlecheVerticale);
-
-    // Position du h2
-    var positionH2 = ecranHeight - 270;
-    $("h2").css("top", positionH2);
+    var tailleDuHeader = $("header").height();
+    var tailleDeLaCarte = ecranHeight - tailleDuHeader + 5;
+    $("#carte").css("height", tailleDeLaCarte);
 
     // Forcer le refresh des programmes jquery
     $(window).on('resize', function() {
@@ -348,6 +412,5 @@
         });
     });
 </script>
-
 
 </html>

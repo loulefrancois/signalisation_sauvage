@@ -1,59 +1,444 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
     color: blue;
+    background-color: #fffcf5;
+    margin-top: 4em;
 }
 
-/* //////////////////////////////////////// */
-/* HEADER */
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.cls-1 {
+    fill: blue;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* //////////////////////// FONTS /////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+@font-face {
+    font-family: 'Mediasans-italic';
+    src: url("../fonts/mediasans-italic-TRIAL.otf");
+}
+
+@font-face {
+    font-family: 'Mediasans-semicondensed-italic';
+    src: url("../fonts/mediasanssemicondensed-italic-TRIAL.otf");
+}
+
+@font-face {
+    font-family: 'Mediasans-semicondensed-light';
+    src: url("../fonts/mediasanssemicondensed-light-TRIAL.otf");
+}
+
+@font-face {
+    font-family: 'Mediasans-extracondensed-blackitalic';
+    src: url("../fonts/mediasansextracondensed-blackitalic-TRIAL.otf");
+}
+
+@font-face {
+    font-family: 'Mediasans-condensed-bolditalic';
+    src: url("../fonts/mediasanscondensed-bolditalic-TRIAL.otf");
+}
+
+@font-face {
+    font-family: 'Mediasans-condensed-regular';
+    src: url("../fonts/mediasanscondensed-regular-TRIAL.otf");
+}
+
+@font-face {
+    font-family: 'Mediasans-regular';
+    src: url("../fonts/mediasans-regular-TRIAL.otf");
+}
+
+
+
+@font-face {
+    font-family: 'Traulha-regular';
+    src: url("../fonts/Traulha-Regulara.otf");
+}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* /////////////////////// HEADER /////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #fffcf5;
+    z-index: 1000;
+}
 
 h1,
 h2,
-p#fleche {
-    position: absolute;
+#forme_01 {
+    text-align: center;
+    display: inline;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
     margin: 0;
-    padding: 20px;
+    border: 1.5px solid blue;
+    border-bottom: 3px solid blue;
+    border-top: 3px solid blue;
+    font-weight: 100;
+}
+
+h1,
+h2 {
+    letter-spacing: 0.02em;
+    font-size: 3em;
+    padding: 0.1em;
+    height: 1.4em;
 }
 
 h1 {
-    font-size: 3em;
+    font-family: 'Mediasans-italic';
+    width: 31%;
+    border-left: 3px solid blue;
 }
 
 h2 {
-    top: 680px;
-    left: -170px;
-    width: 400px;
-    transform: rotate(270deg);
+    font-family: 'Mediasans-semicondensed-light';
+    width: 50%;
 }
 
-h3 {
-    font-size: 2em;
-    margin: 0;
+.mediasans-semicondensed-italic {
+    font-family: 'Mediasans-semicondensed-italic';
 }
 
-p#fleche {
-    text-align: center;
-    width: 80px;
-    left: 20px;
-    top: 20px;
-    font-weight: 900;
+#forme_01 {
+    width: 19%;
+    height: 4.2em;
+    border-right: 3px solid blue;
 }
 
-/* //////////////////////////////////////// */
-/* CARTE */
+#forme_01 svg {
+    height: 100%;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* /////////////////////// CARTES /////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
 
 #carte {
     height: 350px;
 }
 
-/* //////////////////////////////////////// */
-/* FORMES */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* /////////////////////// INTRO. /////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+/* GÉNÉRAL INTRO */
+#forme_02,
+#lacarte,
+#texteintroligne2,
+#contribuer,
+#formeligne3,
+#texteintroligne3,
+#systemedepeinture,
+#formeligne4,
+#ligne5formegauche,
+#textesousformeligne4,
+#ligne5formedroite {
+    text-align: center;
+    display: inline;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1.5px solid blue;
+}
+
+#texteintroligne2,
+#texteintroligne3 {
+    font-family: 'Traulha-regular';
+    text-align: left;
+    padding: 1.5em;
+}
+
+/* /////// */
+/* LIGNE 1 */
+/* /////// */
+
+#forme_02 {
+    border-top: 3px solid blue;
+    border-right: 3px solid blue;
+    border-left: 3px solid blue;
+    width: 100%;
+    height: 10em;
+}
+
+/* /////// */
+/* LIGNE 2 */
+/* /////// */
+
+#lacarte,
+#texteintroligne2,
+#contribuer {
+    height: 14em;
+}
+
+#lacarte p,
+#contribuer p {
+    font-size: 12.5em;
+    line-height: 1em;
+}
+
+/* Somme des width = 100 % */
+
+#lacarte {
+    width: 21.5%;
+}
+
+#texteintroligne2 {
+    width: 38.5%;
+}
+
+#contribuer {
+    width: 40%;
+}
+
+/* */
+
+#lacarte {
+    font-family: 'Mediasans-extracondensed-blackitalic';
+    border-left: 3px solid blue;
+}
+
+#lacarte:hover {
+    background-color: blue;
+    color: #fffcf5;
+}
+
+#texteintroligne2 {
+    border-right: 0;
+}
+
+#contribuer {
+    overflow: hidden;
+    border-left: 0;
+    text-align: right;
+    font-family: 'Mediasans-condensed-bolditalic';
+    border-right: 3px solid blue;
+}
+
+#contribuer svg {
+    height: 100%;
+    left: 0;
+}
+
+#contribuer p {
+    color: #fffcf5;
+    position: absolute;
+    right: 0.1em;
+}
+
+#contribuer:hover p {
+    color: blue;
+    font-family: 'Mediasans-condensed-regular';
+    right: 0.4em;
+}
+
+#contribuer:hover svg .cls-1 {
+    fill: #fffcf5;
+}
+
+#contribuer:hover svg {
+    background-color: blue;
+}
+
+
+/* /////// */
+/* LIGNE 3 */
+/* /////// */
+
+#formeligne3,
+#texteintroligne3,
+#systemedepeinture {
+    height: 14em;
+}
+
+/* Somme des width = 100 % */
+
+#formeligne3 {
+    width: 9%;
+}
+
+
+#texteintroligne3 {
+    width: 38.5%;
+}
+
+#systemedepeinture {
+    width: 52.5%;
+}
+
+/* */
+
+#formeligne3 {
+    background-color: blue;
+}
+
+#formeligne3 svg .cls-1 {
+    fill: #fffcf5;
+}
+
+#formeligne3:hover {
+    background-color: #fffcf5;
+}
+
+#formeligne3:hover svg .cls-1 {
+    fill: blue;
+}
+
+#systemedepeinture p {
+    font-family: 'Mediasans-extracondensed-blackitalic';
+    font-size: 12.5em;
+    line-height: 1em;
+}
+
+#systemedepeinture:hover p {
+    color: #fffcf5;
+}
+
+#systemedepeinture:hover {
+    background-color: blue;
+}
+
+/* /////// */
+/* LIGNE 4 */
+/* /////// */
+
+#formeligne4 {
+    width: 100%;
+    height: 27em;
+    border-left: 3px solid blue;
+    border-right: 3px solid blue;
+}
+
+/* /////// */
+/* LIGNE 5 */
+/* /////// */
+
+
+#ligne5formegauche,
+#textesousformeligne4,
+#ligne5formedroite {
+    height: 27em;
+}
+
+#ligne5formegauche,
+#ligne5formedroite {
+    width: 10%;
+    background-color: blue;
+}
+
+#ligne5formegauche .cls-1,
+#ligne5formedroite .cls-1 {
+    fill: #fffcf5;
+}
+
+#ligne5formegauche {
+    border-left: 3px solid blue;
+    border-right: 0px;
+}
+
+#ligne5formedroite {
+    border-right: 3px solid blue;
+    border-left: 0px;
+}
+
+#textesousformeligne4 {
+    width: 80%;
+    color: #fffcf5;
+    background-color: blue;
+    font-family: 'Traulha-regular';
+    padding: 3em;
+    text-align: inherit;
+}
+
+/* */
+
+#ligne5 {
+    display: none;
+}
+
+#effetapparitionligne4et5:hover #ligne5 {
+    display: block;
+}
+
+#effetapparitionligne4et5:hover #formeligne4 {
+    display: none;
+}
+
+/* */
+
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* /////////////////////// FORMES /////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+#lessignesdedeplacement,
+#textesignesdeplacement,
+#formeintrosignedeplacement {
+    text-align: center;
+    display: inline;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1.5px solid blue;
+    height: 7em;
+}
+
+#lessignesdedeplacement {
+    width: 30%;
+    border-left: 3px solid;
+}
+
+#textesignesdeplacement {
+    width: 50%;
+}
+
+#formeintrosignedeplacement {
+    width: 20%;
+    border-right: 3px solid;
+}
+
+#lessignesdedeplacement p {
+    font-family: 'Mediasans-extracondensed-blackitalic';
+    font-size: 6em;
+    line-height: 1em;
+}
+
+#textesignesdeplacement p {
+    padding: 0.8em;
+    font-family: 'Traulha-regular';
+    text-align: left;
+}
+
+/* ////////////////////////////////////////////////////// */
+
 #container,
 #container2 {
     box-sizing: border-box;
     width: 1000px;
-    height: 300px;
+    height: 400px;
     display: table-cell;
     vertical-align: middle;
 }
@@ -63,71 +448,64 @@ p#fleche {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    max-width: 1300px;
-    min-width: 100px;
-    max-height: 300px;
+    max-width: 1500px;
+    min-width: 200px;
+    max-height: 400px;
     min-height: 50px;
-    height: 125px;
-    width: 250px;
+    height: 205px;
+    width: 350px;
 }
 
-#texteforme1,
-#texteforme2 {
-    height: 270px;
+.bloctextwidth {
+    width: 25%;
+}
+
+.blocformewidth {
+    width: 75%;
+}
+
+.bloctextwidth,
+.blocformewidth {
+    border: 1.5px solid blue;
+    display: inline;
+    height: 400px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.texteforme {
     padding: 15px;
+    font-family: 'Mediasans-regular';
+    font-size: 3em;
+    letter-spacing: 0.02em;
 }
 
-
-/* //////////////////////////////////////// */
-/* TEXTE */
-
-p.onsenfout {
-    font-size: 2em;
+.texteexplicationforme {
+    font-family: 'Traulha-regular';
+    padding-left: 15px;
+    color: #fffcf5;
 }
 
-a {
-    transition: 0.5;
-}
-
-
-/* //////////////////////////////////////// */
-/* TEST */
-
-#formesurtextelong {
-    display: block;
-    width: 100%;
-}
-
-#textelongsousforme { 
-    width: 70%;
-    display: block;
+.boutonpdf {
     text-align: center;
-    background-color: blue;
-    display: none;
-    padding: 0;
-    margin: 0;
-    color: white;
+    display: inline;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    margin: 15px;
+    height: 3.5em;
+    width: 3em;
+    fill: white;
 }
 
-#triangle-code-gauche {
-    background-color: blue;
-    display: inline-block;
-    height: 0;
-    width: 0;
-    border-top: 150px solid transparent;
-    border-bottom: 150px solid transparent;
-    border-left: 150px solid white;
-}
-.grid_12 #texteauhover {
+.bloctextwidth:hover {
     background-color: blue;
 }
-#triangle-code-droite {
-    float: right;
-    background-color: blue;
-    display: inline-block;
-    height: 0;
-    width: 0;
-    border-top: 150px solid transparent;
-    border-bottom: 150px solid transparent;
-    border-right: 150px solid white;
+
+.bloctextwidth:hover .boutonpdf .cls-1,
+.bloctextwidth:hover p {
+    fill: #fffcf5;
+    color: #fffcf5;
 }
