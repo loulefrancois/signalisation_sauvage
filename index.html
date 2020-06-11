@@ -287,11 +287,6 @@
 <!-- ////////////////////////////////////////////////////// -->
 
 <script>
-    // La console affiche la position de la souris dans la div container
-    $(container).on("mousemove", function(event) {
-        $("#log").text("pageX: " + event.pageX + ", pageY: " + event.pageY);
-    });
-
     // Width container
     $(document).ready(function() {
         var widthContainerForme = $(".blocformewidth").width() + "px";
@@ -383,7 +378,6 @@
 
     }
 
-
     // Taille height et width de l'écran
     var ecranHeight = $(window).height();
     var ecranWidth = $(window).width();
@@ -400,7 +394,7 @@
 </script>
 
 <script>
-    // SCROLL TO
+    // SCROLL TO, non utilisé pour l'instant, pour la flèche qui descend
     $(document).ready(function() {
         $('.js-scrollTo').on('click', function() { // Au clic sur un élément
             var page = $(this).attr('href'); // Page cible
