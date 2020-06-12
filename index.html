@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/grid_gruimier.css" />
     <!--<link rel="stylesheet" href="css/grid_gruimier.css" />-->
     <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <!-- JAVASCRIPT/QUERY -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
     </script>
@@ -34,24 +35,52 @@
     <!-- ////////////////////////////////////////////////////// -->
 
     <header>
+
         <h1>signalisation <span class="mediasans-semicondensed-italic">sauvage</span></h1>
 
         <h2>carte collaborative des veloroutes toulousaines</h2>
 
         <div id="forme_01">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 294 46">
-                <defs>
-                </defs>
-                <title>Fichier 1</title>
-                <polygon class="cls-1" points="0 0 0 45.84 36.73 23 36.73 22.99 36.8 22.99 36.76 22.97 36.73 22.96 36.73 22.95 36.73 22.92 36.73 22.94 0 0" />
-                <polygon class="cls-1" points="36.87 0.15 73.54 23.03 36.87 45.99 73.6 45.99 73.6 45.99 73.7 46 110.33 23.07 110.2 23.07 110.2 22.92 110.2 22.92 73.59 0.15 36.87 0.15" />
-                <polygon class="cls-1" points="183.73 22.96 183.79 22.99 183.79 22.92 183.73 22.96" />
-                <path class="cls-1" d="M110.33,0l.23.15Zm36.61,0V.15H110.33l36.54,22.77L110.33,46h36.61v-.15L183.79,23l-.06,0Z" />
-                <path class="cls-1" d="M257.5.15h-.24l36.55,22.77L257.26,46h36.61V23l.13-.08-.13-.08V.15ZM257.26,0l.24.15Z" />
-                <polygon class="cls-1" points="183.8 0.15 220.47 23.03 183.8 45.99 220.54 45.99 220.54 45.99 220.64 46 257.26 23.07 257.14 23.07 257.14 22.92 257.14 22.92 220.53 0.15 183.8 0.15" />
+                <path d="M220,0H184l36,23L184,46h36l37-23Zm74,0H257l37,23L257,46h37ZM184,23,147,0H110l37,23L110,46h37ZM74,0H37L73,23,37,46H74l36-23ZM37,23,0,0V46Z" />
             </svg>
         </div>
     </header>
+
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- /////////////////////// FLECHE /////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+
+    <p id="fleche"><a class="js-scrollTo" href="#navbar">la fleche</a></p>
+
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ///////////////////////// VR ///////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////// -->
+
+    <div id="changementcouleur">
+        <p id="bleu">VR01</p>
+        <p id="rouge">VR02</p>
+        <p id="vert">VR03</p>
+    </div>
+
+    <script>
+        // COULEURS BLEU ROUGE VERT
+        $("#bleu").on('click', function() {
+            $("#bleu").css("font-size", "4em").css("line-height", "1.3em");
+            $("#rouge, #vert").css("font-size", "3em");
+            $("body").css("fill", "blue");
+            $("body, #lacarte").css("color", "blue");
+            $("#lacarte").append('<style>#lacarte:hover {background-color : blue;}</style>');
+            $("#contribuer").append('<style>#contribuer:hover {background-color: blue;}</style>').append('<style>#contribuer:hover p {color: blue;}</style>');
+            $("#formeligne3").append('<style>#formeligne3 {background-color: blue;} #formeligne3:hover {background-color: #fffcf5; fill: blue;}</style>');
+            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: blue;}</style>');
+
+        });
+    </script>
 
     <!-- ////////////////////////////////////////////////////// -->
     <!-- ////////////////////////////////////////////////////// -->
@@ -71,9 +100,12 @@
     <!-- ////////////////////////////////////////////////////// -->
     <!-- ////////////////////////////////////////////////////// -->
 
+    <div id="navbar"></div>
+
     <!-- Ligne 1 -->
 
     <div id="forme_02">
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1278.5 100" height="100%" width="100%" preserveAspectRatio="none">
             <polygon class="cls-1" points="759.11 0 739.13 25 739.14 25 739.13 25 719.16 50 719.16 50 699.18 75 699.18 75 699.18 75.01 699.18 75 679.21 100 699.18 100 719.15 100 739.13 75 739.13 75 739.13 74.99 745.79 66.67 759.11 50 759.11 50 759.11 49.99 759.11 49.99 779.08 25 779.08 25 779.09 25 799.06 0 759.11 0" />
             <polygon class="cls-1" points="779.09 75 779.09 75 779.08 75 772.43 83.33 759.11 100 779.08 100 799.06 100 799.06 75 799.06 50 779.09 75" />
@@ -109,7 +141,7 @@
 
     <div id="texteintroligne2">
         <p>
-            La carte collaborative vous permet d’avoir un aperçu rapide du réseau de véloroute toulousaines et de préparer votre futur trajet. Vous pouvez également y contribuer en mettant à jour des informations de tracés ou en plaçant les photos de votre dernière peinture de signalisation sur la carte. 
+            La carte collaborative vous permet d’avoir un aperçu rapide du réseau de véloroute toulousaines et de préparer votre futur trajet. Vous pouvez également y contribuer en mettant à jour des informations de tracés ou en plaçant les photos de votre dernière peinture de signalisation sur la carte.
 
         </p>
     </div>
@@ -118,7 +150,7 @@
         <div id="textecontribuer">
             <p>contribuer</p>
         </div>
-        
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 518 154" preserveAspectRatio="none" width="100%" height="100%">
             <path class="cls-1" d="M0,0,40,77,0,154H40L80,77,40,0ZM518,0H80l40,77L80,154H518Z" />
         </svg>
@@ -172,7 +204,7 @@
 
             <div id="textesousformeligne4">
                 <p>
-                    Signalisation sauvage c’est à la fois un carte collaborative des véloroutes de Toulouse et un système de peinture qui permet de baliser soi-même de nouvelles véloroute en signalant des danger, en évitant les conflits d’usage et en rendant l’espace cyclable plus lisible dans le but d'en faire un vériable espace de circulation et non seulement de promenade. 
+                    Signalisation sauvage c’est à la fois un carte collaborative des véloroutes de Toulouse et un système de peinture qui permet de baliser soi-même de nouvelles véloroute en signalant des danger, en évitant les conflits d’usage et en rendant l’espace cyclable plus lisible dans le but d'en faire un vériable espace de circulation et non seulement de promenade.
                 </p>
             </div>
 
@@ -213,7 +245,7 @@
     </div>
 
     <!-- Forme 1 -->
-    <div class="blocformewidth">
+    <div class="blocformewidth" style="border-left: 3px solid;">
         <section id="container">
             <div id="forme">
                 <svg version="1.1" id="no-aspect-ratio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 144 72">
@@ -224,7 +256,7 @@
         </section>
     </div>
 
-    <div class="bloctextwidth">
+    <div class="bloctextwidth" style="border-right: 3px solid;">
         <div class="texteforme">
             <p>VR-FL01</p>
         </div>
@@ -241,9 +273,9 @@
 
     <!-- Forme 2 -->
 
- 
-    
-    <div class="bloctextwidth">
+
+
+    <div class="bloctextwidth" style="border-left: 3px solid;">
         <div class="texteforme" style="float: right; width: 400px;">
             <p style="float: right;">VR-FMX05</p>
         </div>
@@ -258,7 +290,7 @@
         </div>
     </div>
 
-    <div class="blocformewidth">
+    <div class="blocformewidth" style="border-right: 3px solid;">
         <section id="container2">
             <div id="forme2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 339.89 169.96" height="100%" width="100%" preserveAspectRatio="none">
@@ -395,7 +427,7 @@
 </script>
 
 <script>
-    // SCROLL TO, non utilisé pour l'instant, pour la flèche qui descend
+    // SCROLL TO
     $(document).ready(function() {
         $('.js-scrollTo').on('click', function() { // Au clic sur un élément
             var page = $(this).attr('href'); // Page cible
@@ -406,6 +438,14 @@
             return false;
         });
     });
+
+    // Position de la flèche centrée
+    var positionFlecheHorizontale = ecranWidth / 2 - 60;
+    $("#fleche").css("left", positionFlecheHorizontale);
+    var positionFlecheVerticale = ecranHeight - 60;
+    $("#fleche").css("top", positionFlecheVerticale);
 </script>
+
+
 
 </html>

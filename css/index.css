@@ -1,10 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    color: blue;
+    color: black;
     background-color: #fffcf5;
     margin-top: 4em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
 }
 
 p {
@@ -12,8 +18,11 @@ p {
     margin: 0;
 }
 
-.cls-1 {
-    fill: blue;
+#texteintroligne2 p,
+#texteintroligne3 p,
+#textesousformeligne4 p,
+#textesignesdeplacement p {
+    font-size: 1.2em;
 }
 
 /* ////////////////////////////////////////////////////// */
@@ -57,8 +66,6 @@ p {
     src: url("../fonts/mediasans-regular-TRIAL.otf");
 }
 
-
-
 @font-face {
     font-family: 'Traulha-regular';
     src: url("../fonts/Traulha-Regulara.otf");
@@ -84,11 +91,10 @@ h2,
     display: inline;
     float: left;
     position: relative;
-    box-sizing: border-box;
     margin: 0;
-    border: 1.5px solid blue;
-    border-bottom: 3px solid blue;
-    border-top: 3px solid blue;
+    border: 1.5px solid;
+    border-bottom: 3px solid;
+    border-top: 3px solid;
     font-weight: 100;
 }
 
@@ -103,7 +109,7 @@ h2 {
 h1 {
     font-family: 'Mediasans-italic';
     width: 31%;
-    border-left: 3px solid blue;
+    border-left: 3px solid;
 }
 
 h2 {
@@ -118,11 +124,57 @@ h2 {
 #forme_01 {
     width: 19%;
     height: 4.2em;
-    border-right: 3px solid blue;
+    border-right: 3px solid;
 }
 
 #forme_01 svg {
     height: 100%;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* /////////////////////// FLECHE /////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+p#fleche {
+    z-index: 1000;
+    position: absolute;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ///////////////////////// VR ///////////////////////// */
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+#changementcouleur {
+    position: absolute;
+    padding: 20px;
+    bottom: 0px;
+}
+
+#changementcouleur p {
+    font-family: 'Mediasans-extracondensed-blackitalic';
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+#changementcouleur p:hover {
+    font-size: 4em;
+    line-height: 1.3em;
+}
+
+#changementcouleur p#bleu {
+    color: blue;
+}
+
+#changementcouleur p#rouge {
+    color: red;
+}
+
+#changementcouleur p#vert {
+    color: green;
 }
 
 /* ////////////////////////////////////////////////////// */
@@ -159,24 +211,25 @@ h2 {
     position: relative;
     box-sizing: border-box;
     margin: 0;
-    border: 1.5px solid blue;
+    border: 1.5px solid;
 }
 
 #texteintroligne2,
 #texteintroligne3 {
-    font-family: 'Traulha-regular';
     text-align: left;
     padding: 1.5em;
 }
+
+
 
 /* /////// */
 /* LIGNE 1 */
 /* /////// */
 
 #forme_02 {
-    border-top: 3px solid blue;
-    border-right: 3px solid blue;
-    border-left: 3px solid blue;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    border-left: 3px solid;
     width: 100%;
     height: 10em;
 }
@@ -215,11 +268,14 @@ h2 {
 
 #lacarte {
     font-family: 'Mediasans-extracondensed-blackitalic';
-    border-left: 3px solid blue;
+    border-left: 3px solid;
 }
 
 #lacarte:hover {
-    background-color: blue;
+    background-color: black;
+}
+
+#lacarte:hover p {
     color: #fffcf5;
 }
 
@@ -232,7 +288,7 @@ h2 {
     border-left: 0;
     text-align: right;
     font-family: 'Mediasans-condensed-bolditalic';
-    border-right: 3px solid blue;
+    border-right: 3px solid;
 }
 
 #contribuer svg {
@@ -247,17 +303,14 @@ h2 {
 }
 
 #contribuer:hover p {
-    color: blue;
     font-family: 'Mediasans-condensed-regular';
     right: 0.4em;
+    color: black;
 }
 
-#contribuer:hover svg .cls-1 {
+#contribuer:hover {
     fill: #fffcf5;
-}
-
-#contribuer:hover svg {
-    background-color: blue;
+    background-color: black;
 }
 
 
@@ -289,10 +342,11 @@ h2 {
 /* */
 
 #formeligne3 {
-    background-color: blue;
+    border-left: 3px solid;
+    background: black;
 }
 
-#formeligne3 svg .cls-1 {
+#formeligne3 svg {
     fill: #fffcf5;
 }
 
@@ -300,8 +354,8 @@ h2 {
     background-color: #fffcf5;
 }
 
-#formeligne3:hover svg .cls-1 {
-    fill: blue;
+#formeligne3:hover svg {
+    fill: black;
 }
 
 #systemedepeinture p {
@@ -315,7 +369,7 @@ h2 {
 }
 
 #systemedepeinture:hover {
-    background-color: blue;
+    background-color: black;
 }
 
 /* /////// */
@@ -325,8 +379,8 @@ h2 {
 #formeligne4 {
     width: 100%;
     height: 27em;
-    border-left: 3px solid blue;
-    border-right: 3px solid blue;
+    border-left: 3px solid;
+    border-right: 3px solid;
 }
 
 /* /////// */
@@ -338,12 +392,12 @@ h2 {
 #textesousformeligne4,
 #ligne5formedroite {
     height: 27em;
+    background-color: black;
 }
 
 #ligne5formegauche,
 #ligne5formedroite {
     width: 10%;
-    background-color: blue;
 }
 
 #ligne5formegauche .cls-1,
@@ -352,22 +406,23 @@ h2 {
 }
 
 #ligne5formegauche {
-    border-left: 3px solid blue;
+    border-left: 3px solid;
     border-right: 0px;
 }
 
 #ligne5formedroite {
-    border-right: 3px solid blue;
+    border-right: 3px solid;
     border-left: 0px;
 }
 
 #textesousformeligne4 {
     width: 80%;
-    color: #fffcf5;
-    background-color: blue;
-    font-family: 'Traulha-regular';
     padding: 3em;
     text-align: inherit;
+}
+
+#textesousformeligne4 p {
+    color: #fffcf5;
 }
 
 /* */
@@ -402,7 +457,7 @@ h2 {
     position: relative;
     box-sizing: border-box;
     margin: 0;
-    border: 1.5px solid blue;
+    border: 1.5px solid;
     height: 7em;
 }
 
@@ -428,7 +483,6 @@ h2 {
 
 #textesignesdeplacement p {
     padding: 0.8em;
-    font-family: 'Traulha-regular';
     text-align: left;
 }
 
@@ -466,7 +520,7 @@ h2 {
 
 .bloctextwidth,
 .blocformewidth {
-    border: 1.5px solid blue;
+    border: 1.5px solid;
     display: inline;
     height: 400px;
     float: left;
@@ -482,9 +536,9 @@ h2 {
 }
 
 .texteexplicationforme {
-    font-family: 'Traulha-regular';
     padding-left: 15px;
     color: #fffcf5;
+    display: none;
 }
 
 .boutonpdf {
@@ -497,15 +551,15 @@ h2 {
     margin: 15px;
     height: 2em;
     width: 1.5em;
-    fill: white;
 }
 
 .bloctextwidth:hover {
-    background-color: blue;
+    background-color: black;
 }
 
 .bloctextwidth:hover .boutonpdf .cls-1,
 .bloctextwidth:hover p {
     fill: #fffcf5;
     color: #fffcf5;
+    display: block;
 }
