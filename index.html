@@ -35,7 +35,6 @@
     <!-- ////////////////////////////////////////////////////// -->
 
     <header>
-
         <h1>signalisation <span class="mediasans-semicondensed-italic">sauvage</span></h1>
 
         <h2>carte collaborative des veloroutes toulousaines</h2>
@@ -53,7 +52,13 @@
     <!-- ////////////////////////////////////////////////////// -->
     <!-- ////////////////////////////////////////////////////// -->
 
-    <p id="fleche"><a class="js-scrollTo" href="#navbar">la fleche</a></p>
+    <p id="fleche">
+        <a class="js-scrollTo" href="#navbar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.33 65.18">
+                <polygon points="67.33 32.15 67.33 0 33.66 32.15 0 0 0 32.15 33.66 65.19 67.33 32.15" />
+            </svg>
+        </a>
+    </p>
 
     <!-- ////////////////////////////////////////////////////// -->
     <!-- ////////////////////////////////////////////////////// -->
@@ -67,20 +72,7 @@
         <p id="vert">VR03</p>
     </div>
 
-    <script>
-        // COULEURS BLEU ROUGE VERT
-        $("#bleu").on('click', function() {
-            $("#bleu").css("font-size", "4em").css("line-height", "1.3em");
-            $("#rouge, #vert").css("font-size", "3em");
-            $("body").css("fill", "blue");
-            $("body, #lacarte").css("color", "blue");
-            $("#lacarte").append('<style>#lacarte:hover {background-color : blue;}</style>');
-            $("#contribuer").append('<style>#contribuer:hover {background-color: blue;}</style>').append('<style>#contribuer:hover p {color: blue;}</style>');
-            $("#formeligne3").append('<style>#formeligne3 {background-color: blue;} #formeligne3:hover {background-color: #fffcf5; fill: blue;}</style>');
-            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: blue;}</style>');
 
-        });
-    </script>
 
     <!-- ////////////////////////////////////////////////////// -->
     <!-- ////////////////////////////////////////////////////// -->
@@ -166,7 +158,7 @@
     </div>
 
     <div id="texteintroligne3">
-        <p>La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae. Cid et ad quisti nonsequam voluptas millorem aut as ariatiunt andae aliquas sum veria dolupta aditaectias expe conem faciass itatur Is aspitatiusci totassunt es doluptas rem aut faciis iur ad ut inctur Quia sandemo ssequam reritas reptatum</p>
+        <p>La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae. Cid et ad quisti nonsequam voluptas millorem aut as ariatiunt andae aliquas sum veria dolupta aditaectias expe conem faciass itatur Is </p>
     </div>
 
     <div id="systemedepeinture">
@@ -234,7 +226,7 @@
 
     <div id="textesignesdeplacement">
         <p>
-            La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae. Cid et ad quisti nonsequam voluptas millorem aut as ariatiunt andae aliquas sum veria dolupta aditaectias expe conem faciass.
+            La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae.
         </p>
     </div>
 
@@ -417,13 +409,25 @@
 
     // Carte height automatique à la taille de l'écran
     var tailleDuHeader = $("header").height();
-    var tailleDeLaCarte = ecranHeight - tailleDuHeader + 5;
+    var tailleDeLaCarte = ecranHeight - tailleDuHeader;
     $("#carte").css("height", tailleDeLaCarte);
+    
+    // Margin-top BODY automatique
+    $("body").css("margin-top", tailleDuHeader);
 
     // Forcer le refresh des programmes jquery
     $(window).on('resize', function() {
         location.reload();
     });
+    
+    // Taille automatique font-size et padding-top
+    var tailleAutoFont1 = ecranWidth * 2 / 1140 + "em";
+    $("h1, h2, #lacarte p").css("font-size", tailleAutoFont1);
+    var tailleAutoFont2 = ecranWidth * 2 / 260 + "em";
+    $("#lacarte p, #contribuer p, #systemedepeinture p").css("font-size", tailleAutoFont2);
+    var tailleAutoFont3 = ecranWidth * 6 / 1700 + "em";
+    $("#lessignesdedeplacement p").css("font-size", tailleAutoFont3);
+    
 </script>
 
 <script>
@@ -446,6 +450,58 @@
     $("#fleche").css("top", positionFlecheVerticale);
 </script>
 
+<script>
+    // COULEURS BLEU ROUGE VERT
+    $("#bleu").on('click', function() {
+        $("#bleu").css("font-size", "4em").css("line-height", "1.3em");
+        $("#rouge").append('<style>#rouge {font-size: 3em;} #rouge:hover {font-size: 4em;}</style>');
+        $("#vert").append('<style>#vert {font-size: 3em;} #vert:hover {font-size: 4em;}</style>');
+
+        $("body").css("fill", "blue");
+        $("body, #lacarte").css("color", "blue");
+        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "blue");
+        $("#lacarte").append('<style>#lacarte:hover {background-color: blue;} </style>');
+        $("#contribuer").append('<style>#contribuer:hover {background-color: blue;}</style>').append('<style>#contribuer:hover p {color: blue;}</style>');
+        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: blue; background-color: #fffcf5;} </style>');
+        $("#formeligne3").append('<style>#formeligne3 {background-color: blue;}</style>');
+        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: blue;}</style>');
+        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: blue;}</style>');
+
+    });
+
+    $("#rouge").on('click', function() {
+        $("#rouge").css("font-size", "4em").css("line-height", "1.3em");
+        $("#bleu").append('<style>#bleu {font-size: 3em;} #rouge:hover {font-size: 4em;}</style>');
+        $("#vert").append('<style>#vert {font-size: 3em;} #vert:hover {font-size: 4em;}</style>');
+
+        $("body").css("fill", "red");
+        $("body, #lacarte").css("color", "red");
+        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "red");
+        $("#lacarte").append('<style>#lacarte:hover {background-color : red;}</style>');
+        $("#contribuer").append('<style>#contribuer:hover {background-color: red;}</style>').append('<style>#contribuer:hover p {color: red;}</style>');
+        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: red; background-color: #fffcf5;} </style>');
+        $("#formeligne3").append('<style>#formeligne3 {background-color: red;}</style>');
+        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: red;}</style>');
+        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: red;}</style>');
+    });
+
+    $("#vert").on('click', function() {
+        $("#vert").css("font-size", "4em").css("line-height", "1.3em");
+        $("#rouge").append('<style>#rouge {font-size: 3em;} #rouge:hover {font-size: 4em;}</style>');
+        $("#bleu").append('<style>#bleu {font-size: 3em;} #rouge:hover {font-size: 4em;}</style>');
+
+
+        $("body").css("fill", "green");
+        $("body, #lacarte").css("color", "green");
+        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "green");
+        $("#lacarte").append('<style>#lacarte:hover {background-color : green;}</style>');
+        $("#contribuer").append('<style>#contribuer:hover {background-color: green;}</style>').append('<style>#contribuer:hover p {color: green;}</style>');
+        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: green; background-color: #fffcf5;} </style>');
+        $("#formeligne3").append('<style>#formeligne3 {background-color: green;}</style>');
+        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: green;}</style>');
+        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: green;}</style>');
+    });
+</script>
 
 
 </html>
