@@ -572,8 +572,8 @@ p#fleche {
 /* ////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////// */
 
-@media screen and (min-width: 800px) and (max-width: 1280px) {
-
+@media screen and (max-width: 1280px) {
+    
     #texteintroligne2 p,
     #texteintroligne3 p,
     #textesousformeligne4 p,
@@ -600,12 +600,5 @@ p#fleche {
     #textesignesdeplacement,
     #formeintrosignedeplacement {
         height: 5.55em;
-    }
-
-}
-
-@media screen (min-width : 375px) and (max-width : 667px) {
-    body {
-        background-color: yellow;
     }
 }
