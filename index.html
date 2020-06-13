@@ -35,7 +35,9 @@
     <!-- ////////////////////////////////////////////////////// -->
 
     <header>
-        <h1>signalisation <span class="mediasans-semicondensed-italic">sauvage</span></h1>
+        <a href="index.html">
+            <h1>signalisation <span class="mediasans-semicondensed-italic">sauvage</span></h1>
+        </a>
 
         <h2>carte collaborative des veloroutes toulousaines</h2>
 
@@ -67,11 +69,127 @@
     <!-- ////////////////////////////////////////////////////// -->
 
     <div id="changementcouleur">
-        <p id="bleu">VR01</p>
-        <p id="rouge">VR02</p>
-        <p id="vert">VR03</p>
+
+        <div id="vr01">
+            <p id="bleu">VR01</p>
+            <p id="bleu2">VR01</p>
+        </div>
+
+        <div id="vr02">
+            <p id="rouge">VR02</p>
+            <p id="rouge2">VR02</p>
+        </div>
+
+        <div id="vr03">
+            <p id="vert">VR03</p>
+            <p id="vert2">VR03</p>
+        </div>
+
     </div>
 
+    <script>
+        // BLEU COULEUR
+        $("#bleu").on('click', function() {
+            $("#bleu, #rouge2, #vert2").css("display", "none");
+            $("#bleu2, #rouge, #vert").css("display", "block");
+
+            $("body").css("fill", "blue");
+            $("a").css("color", "blue");
+            $("body, #lacarte").css("color", "blue");
+            $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "blue");
+            $("#lacarte").append('<style>#lacarte:hover {background-color: blue;} </style>');
+            $("#contribuer").append('<style>#contribuer:hover {background-color: blue;}</style>').append('<style>#contribuer:hover p {color: blue;}</style>');
+            $("#formeligne3").append('<style>#formeligne3:hover svg {fill: blue; background-color: #fffcf5;} </style>');
+            $("#formeligne3").append('<style>#formeligne3 {background-color: blue;}</style>');
+            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: blue;}</style>');
+            $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: blue;} .bloctextwidth a {fill: blue;}</style>');
+        });
+
+        //BLEU RETOUR AU NOIR
+        $("#bleu2").on('click', function() {
+            $("#bleu2").css("display", "none");
+            $("#bleu").css("display", "block");
+
+            $("body").css("fill", "black");
+            $("a").css("color", "black");
+            $("body, #lacarte").css("color", "black");
+            $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "black");
+            $("#lacarte").append('<style>#lacarte:hover {background-color: black;} </style>');
+            $("#contribuer").append('<style>#contribuer:hover {background-color: black;}</style>').append('<style>#contribuer:hover p {color: black;}</style>');
+            $("#formeligne3").append('<style>#formeligne3:hover svg {fill: black; background-color: #fffcf5;} </style>');
+            $("#formeligne3").append('<style>#formeligne3 {background-color: black;}</style>');
+            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
+            $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
+        });
+
+        // ROUGE COULEUR
+        $("#rouge").on('click', function() {
+            $("#rouge, #bleu2, #vert2").css("display", "none");
+            $("#rouge2, #bleu, #vert").css("display", "block");
+
+            $("body").css("fill", "red");
+            $("a").css("color", "red");
+            $("body, #lacarte").css("color", "red");
+            $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "red");
+            $("#lacarte").append('<style>#lacarte:hover {background-color : red;}</style>');
+            $("#contribuer").append('<style>#contribuer:hover {background-color: red;}</style>').append('<style>#contribuer:hover p {color: red;}</style>');
+            $("#formeligne3").append('<style>#formeligne3:hover svg {fill: red; background-color: #fffcf5;} </style>');
+            $("#formeligne3").append('<style>#formeligne3 {background-color: red;}</style>');
+            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: red;}</style>');
+            $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: red;} .bloctextwidth a {fill: red;}</style>');
+        });
+
+        //ROUGE RETOUR AU NOIR
+        $("#rouge2").on('click', function() {
+            $("#rouge2").css("display", "none");
+            $("#rouge").css("display", "block");
+
+            $("body").css("fill", "black");
+            $("a").css("color", "black");
+            $("body, #lacarte").css("color", "black");
+            $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "black");
+            $("#lacarte").append('<style>#lacarte:hover {background-color: black;} </style>');
+            $("#contribuer").append('<style>#contribuer:hover {background-color: black;}</style>').append('<style>#contribuer:hover p {color: black;}</style>');
+            $("#formeligne3").append('<style>#formeligne3:hover svg {fill: black; background-color: #fffcf5;} </style>');
+            $("#formeligne3").append('<style>#formeligne3 {background-color: black;}</style>');
+            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
+            $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
+        });
+
+        //VERT COULEUR
+        $("#vert").on('click', function() {
+            $("#vert, #bleu2, #rouge2").css("display", "none");
+            $("#vert2, #bleu, #rouge").css("display", "block");
+
+            $("body").css("fill", "green");
+            $("a").css("color", "green");
+            $("body, #lacarte").css("color", "green");
+            $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "green");
+            $("#lacarte").append('<style>#lacarte:hover {background-color : green;}</style>');
+            $("#contribuer").append('<style>#contribuer:hover {background-color: green;}</style>').append('<style>#contribuer:hover p {color: green;}</style>');
+            $("#formeligne3").append('<style>#formeligne3:hover svg {fill: green; background-color: #fffcf5;} </style>');
+            $("#formeligne3").append('<style>#formeligne3 {background-color: green;}</style>');
+            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: green;}</style>');
+            $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: green;} .bloctextwidth a {fill: green;}</style>');
+        });
+
+        //VERT RETOUR AU NOIR
+        $("#vert2").on('click', function() {
+            $("#vert2").css("display", "none");
+            $("#vert").css("display", "block");
+
+            $("body").css("fill", "black");
+            $("a").css("color", "black");
+            $("body, #lacarte").css("color", "black");
+            $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "black");
+            $("#lacarte").append('<style>#lacarte:hover {background-color: black;} </style>');
+            $("#contribuer").append('<style>#contribuer:hover {background-color: black;}</style>').append('<style>#contribuer:hover p {color: black;}</style>');
+            $("#formeligne3").append('<style>#formeligne3:hover svg {fill: black; background-color: #fffcf5;} </style>');
+            $("#formeligne3").append('<style>#formeligne3 {background-color: black;}</style>');
+            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
+            $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
+        });
+    </script>
 
 
     <!-- ////////////////////////////////////////////////////// -->
@@ -158,8 +276,8 @@
     </div>
 
     <div id="texteintroligne3">
-        <p> Le système de peinture s’ajoute à la signalisation déjà existante pour en combler les imperfections. En tant qu’usager de ce réseau, vous êtes le plus à même d’en connaitre les failles et les dangers. Ce système permet d’optimiser vos parcours en menant une action de peinture rapide et peu couteuse. 
- </p>
+        <p> Le système de peinture s’ajoute à la signalisation déjà existante pour en combler les imperfections. En tant qu’usager de ce réseau, vous êtes le plus à même d’en connaitre les failles et les dangers. Ce système permet d’optimiser vos parcours en menant une action de peinture rapide et peu couteuse.
+        </p>
     </div>
 
     <div id="systemedepeinture">
@@ -200,16 +318,16 @@
                     Signalisation sauvage c’est à la fois un carte collaborative des véloroutes de Toulouse et un système
                     de peinture qui permet de baliser soi-même de nouvelles véloroutes en signalant des dangers, en évitant
                     les conflits d’usage et en rendant l’espace cyclable plus lisible dans le but d'en faire un vériable espace
-                    de circulation et non seulement de promenade. Parfois durable, parfois éphémère, votre peintures participera 
-                    donc à l’aménagement de l’espace cyclable en y apportant une solution rapide. Ce système 
-                    de signalisation à également la double fonction signalisation/signalétique puisque que chaque peinture constitue 
-                    un élément de balisage permettant d’assurer la continuité du flux cyclable. 
+                    de circulation et non seulement de promenade. Parfois durable, parfois éphémère, votre peintures participera
+                    donc à l’aménagement de l’espace cyclable en y apportant une solution rapide. Ce système
+                    de signalisation à également la double fonction signalisation/signalétique puisque que chaque peinture constitue
+                    un élément de balisage permettant d’assurer la continuité du flux cyclable.
                     Peu de matériel est nécessaire pour tracer ces formes à grande échelle. Elles sont conçues pour pouvoir s’adapter
-                    à la taille et à la qualité du support disponible. Chaque signe peut être tracé en contour lorsqu’il doit se faire discret. 
-                    Chaque véloroute à sa propre couleur, tous les éléments de signalisation peints sur une même véloroute doivent être 
+                    à la taille et à la qualité du support disponible. Chaque signe peut être tracé en contour lorsqu’il doit se faire discret.
+                    Chaque véloroute à sa propre couleur, tous les éléments de signalisation peints sur une même véloroute doivent être
                     de la même couleur.
-                    Utilisé plus librement, ce système permet aussi de décorer 
-                    certains points clés des véloroutes en combinant, en dupliquant et variant le couleur de ces signes. 
+                    Utilisé plus librement, ce système permet aussi de décorer
+                    certains points clés des véloroutes en combinant, en dupliquant et variant le couleur de ces signes.
                     Cette action décorative participe indirectement à l’identification des espaces cyclable et à leur aménagement.
 
                 </p>
@@ -472,58 +590,7 @@
     $("#fleche").css("top", positionFlecheVerticale);
 </script>
 
-<script>
-    // COULEURS BLEU ROUGE VERT
-    $("#bleu").on('click', function() {
-        $("#bleu").css("font-size", "4em").css("line-height", "1.3em");
-        $("#rouge").append('<style>#rouge {font-size: 3em;} #rouge:hover {font-size: 4em;}</style>');
-        $("#vert").append('<style>#vert {font-size: 3em;} #vert:hover {font-size: 4em;}</style>');
 
-        $("body").css("fill", "blue");
-        $("body, #lacarte").css("color", "blue");
-        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "blue");
-        $("#lacarte").append('<style>#lacarte:hover {background-color: blue;} </style>');
-        $("#contribuer").append('<style>#contribuer:hover {background-color: blue;}</style>').append('<style>#contribuer:hover p {color: blue;}</style>');
-        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: blue; background-color: #fffcf5;} </style>');
-        $("#formeligne3").append('<style>#formeligne3 {background-color: blue;}</style>');
-        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: blue;}</style>');
-        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: blue;}</style>');
-
-    });
-
-    $("#rouge").on('click', function() {
-        $("#rouge").css("font-size", "4em").css("line-height", "1.3em");
-        $("#bleu").append('<style>#bleu {font-size: 3em;} #rouge:hover {font-size: 4em;}</style>');
-        $("#vert").append('<style>#vert {font-size: 3em;} #vert:hover {font-size: 4em;}</style>');
-
-        $("body").css("fill", "red");
-        $("body, #lacarte").css("color", "red");
-        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "red");
-        $("#lacarte").append('<style>#lacarte:hover {background-color : red;}</style>');
-        $("#contribuer").append('<style>#contribuer:hover {background-color: red;}</style>').append('<style>#contribuer:hover p {color: red;}</style>');
-        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: red; background-color: #fffcf5;} </style>');
-        $("#formeligne3").append('<style>#formeligne3 {background-color: red;}</style>');
-        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: red;}</style>');
-        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: red;}</style>');
-    });
-
-    $("#vert").on('click', function() {
-        $("#vert").css("font-size", "4em").css("line-height", "1.3em");
-        $("#rouge").append('<style>#rouge {font-size: 3em;} #rouge:hover {font-size: 4em;}</style>');
-        $("#bleu").append('<style>#bleu {font-size: 3em;} #rouge:hover {font-size: 4em;}</style>');
-
-
-        $("body").css("fill", "green");
-        $("body, #lacarte").css("color", "green");
-        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "green");
-        $("#lacarte").append('<style>#lacarte:hover {background-color : green;}</style>');
-        $("#contribuer").append('<style>#contribuer:hover {background-color: green;}</style>').append('<style>#contribuer:hover p {color: green;}</style>');
-        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: green; background-color: #fffcf5;} </style>');
-        $("#formeligne3").append('<style>#formeligne3 {background-color: green;}</style>');
-        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: green;}</style>');
-        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: green;}</style>');
-    });
-</script>
 
 
 </html>

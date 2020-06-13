@@ -1,0 +1,52 @@
+<script>
+    // COULEURS BLEU ROUGE VERT
+    $("#bleu").on('click', function() {
+        $("#bleu").css("font-size", "4em").css("line-height", "2em");
+        $("#rouge").append('<style>#rouge {font-size: 3em;} #rouge:hover {font-size: 4em;}</style>');
+        $("#vert").append('<style>#vert {font-size: 3em;} #vert:hover {font-size: 4em;}</style>');
+
+        $("body").css("fill", "blue");
+        $("body, #lacarte").css("color", "blue");
+        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "blue");
+        $("#lacarte").append('<style>#lacarte:hover {background-color: blue;} </style>');
+        $("#contribuer").append('<style>#contribuer:hover {background-color: blue;}</style>').append('<style>#contribuer:hover p {color: blue;}</style>');
+        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: blue; background-color: #fffcf5;} </style>');
+        $("#formeligne3").append('<style>#formeligne3 {background-color: blue;}</style>');
+        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: blue;}</style>');
+        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: blue;}</style>');
+
+    });
+
+    $("#rouge").on('click', function() {
+        $("#rouge").css("font-size", "4em").css("line-height", "2em");
+        $("#bleu").append('<style>#bleu {font-size: 3em;} #rouge:hover {font-size: 4em;}</style>');
+        $("#vert").append('<style>#vert {font-size: 3em;} #vert:hover {font-size: 4em;}</style>');
+
+        $("body").css("fill", "red");
+        $("body, #lacarte").css("color", "red");
+        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "red");
+        $("#lacarte").append('<style>#lacarte:hover {background-color : red;}</style>');
+        $("#contribuer").append('<style>#contribuer:hover {background-color: red;}</style>').append('<style>#contribuer:hover p {color: red;}</style>');
+        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: red; background-color: #fffcf5;} </style>');
+        $("#formeligne3").append('<style>#formeligne3 {background-color: red;}</style>');
+        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: red;}</style>');
+        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: red;}</style>');
+    });
+
+    $("#vert").on('click', function() {
+        $("#vert").css("font-size", "4em").css("line-height", "2em");
+        $("#rouge").append('<style>#rouge {font-size: 3em;} #rouge:hover {font-size: 4em;}</style>');
+        $("#bleu").append('<style>#bleu {font-size: 3em;} #rouge:hover {font-size: 4em;}</style>');
+
+
+        $("body").css("fill", "green");
+        $("body, #lacarte").css("color", "green");
+        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "green");
+        $("#lacarte").append('<style>#lacarte:hover {background-color : green;}</style>');
+        $("#contribuer").append('<style>#contribuer:hover {background-color: green;}</style>').append('<style>#contribuer:hover p {color: green;}</style>');
+        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: green; background-color: #fffcf5;} </style>');
+        $("#formeligne3").append('<style>#formeligne3 {background-color: green;}</style>');
+        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: green;}</style>');
+        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: green;}</style>');
+    });
+</script>

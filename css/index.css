@@ -18,6 +18,11 @@ p {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 #texteintroligne2 p,
 #texteintroligne3 p,
 #textesousformeligne4 p,
@@ -159,25 +164,47 @@ p#fleche {
 #changementcouleur p {
     font-family: 'Mediasans-extracondensed-blackitalic';
     font-size: 3em;
-    line-height: 1.5em;
 }
 
 #changementcouleur p:hover {
     font-size: 4em;
-    line-height: 1.3em;
     cursor: pointer;
+    line-height: 0.8em;
 }
 
-#changementcouleur p#bleu {
+p#bleu,
+p#bleu2 {
     color: blue;
 }
 
-#changementcouleur p#rouge {
+p#rouge,
+p#rouge2 {
     color: red;
 }
 
-#changementcouleur p#vert {
+p#vert,
+p#vert2 {
     color: green;
+}
+
+/* TEST */
+#vr01,
+#vr02,
+#vr03 {
+    height: 5em;
+}
+
+#vr01 p:hover,
+#vr02 p:hover,
+#vr03 p:hover {
+}
+
+p#bleu2,
+p#rouge2,
+p#vert2 {
+    display: none;
+    font-size: 4em;
+    line-height: 0.8em;
 }
 
 /* ////////////////////////////////////////////////////// */
@@ -619,7 +646,7 @@ p#fleche {
     h1 {
         width: 50%;
     }
-    
+
     h2 {
         width: 60%:
     }
