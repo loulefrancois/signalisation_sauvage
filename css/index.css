@@ -573,7 +573,7 @@ p#fleche {
 /* ////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 1280px) {
-    
+
     #texteintroligne2 p,
     #texteintroligne3 p,
     #textesousformeligne4 p,
@@ -601,4 +601,28 @@ p#fleche {
     #formeintrosignedeplacement {
         height: 5.55em;
     }
+}
+
+@media screen and (max-width: 400px) {
+
+    body {
+        background-color: yellow;
+    }
+
+    h1,
+    h2 {
+        letter-spacing: 0.02em;
+        padding: 0.1em;
+        height: 4em;
+    }
+
+    h1 {
+        width: 50%;
+    }
+    
+    h2 {
+        width: 60%:
+    }
+
+
 }

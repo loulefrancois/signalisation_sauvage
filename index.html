@@ -427,12 +427,14 @@
     });
 
     // Taille automatique font-size et padding-top
-    var tailleAutoFont1 = ecranWidth * 2 / 1140 + "em";
-    $("h1, h2, #lacarte p").css("font-size", tailleAutoFont1);
-    var tailleAutoFont2 = ecranWidth * 2 / 260 + "em";
-    $("#lacarte p, #contribuer p, #systemedepeinture p").css("font-size", tailleAutoFont2);
-    var tailleAutoFont3 = ecranWidth * 6 / 1700 + "em";
-    $("#lessignesdedeplacement p").css("font-size", tailleAutoFont3);
+    if (ecranWidth > 700) {
+        var tailleAutoFont1 = ecranWidth * 2 / 1140 + "em";
+        $("h1, h2, #lacarte p").css("font-size", tailleAutoFont1);
+        var tailleAutoFont2 = ecranWidth * 2 / 260 + "em";
+        $("#lacarte p, #contribuer p, #systemedepeinture p").css("font-size", tailleAutoFont2);
+        var tailleAutoFont3 = ecranWidth * 6 / 1700 + "em";
+        $("#lessignesdedeplacement p").css("font-size", tailleAutoFont3);
+    }
 </script>
 
 <script>
