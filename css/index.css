@@ -517,7 +517,8 @@ p#vert2 {
 /* ////////////////////////////////////////////////////// */
 
 #container,
-#container2 {
+#container2,
+#container3 {
     box-sizing: border-box;
     width: 1000px;
     height: 400px;
@@ -526,7 +527,8 @@ p#vert2 {
 }
 
 #forme,
-#forme2 {
+#forme2,
+#forme3 {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
