@@ -520,7 +520,8 @@ p#vert2 {
 #container2,
 #container3,
 #container4,
-#container5 {
+#container5,
+#container6 {
     box-sizing: border-box;
     width: 1000px;
     height: 400px;
@@ -532,7 +533,8 @@ p#vert2 {
 #forme2,
 #forme3,
 #forme4,
-#forme5 {
+#forme5,
+#forme6 {
     margin-left: auto;
     margin-right: auto;
     padding: 0;

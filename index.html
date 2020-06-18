@@ -620,6 +620,33 @@
         $('#container5').mousemove(vf_hover);
 
     }
+    
+    // ////////////////////////////////////////////////////////////
+    // FORME 6
+
+    if ($('#container6').length > 0) {
+
+        $('#container6').focus();
+
+        var vf_hover = function(m) {
+            //var cursorX = m.pageX / $(this).width();
+            var cursorX = event.pageX - $(this).offset().left;
+            //var cursorY = 1 - (m.pageY) / $(this).height();
+            var cursorY = event.pageY - $(this).offset().top;
+
+            var positionX = Math.floor(cursorX * 1);
+            var positionY = Math.floor(cursorY * 2);
+
+            var vfString = positionX + "px";
+            var vfStringHeight = positionY + "px";
+            $("#forme6").css("width", vfString);
+            $("#forme6").css("height", vfStringHeight);
+            //$("#log").text("cursorX: " + cursorX + ", cursorY: " + cursorY + ", positionX:" + positionX + ", positionY: " + positionY);
+        }
+
+        $('#container6').mousemove(vf_hover);
+
+    }
 
     // Taille height et width de l'écran
     var ecranHeight = $(window).height();
