@@ -434,18 +434,15 @@
     </div>
 
 
-<!-- Forme 3 -->
+    <!-- Forme 3 -->
+
     <div class="blocformewidth" style="border-left: 3px solid;">
         <section id="container3">
             <div id="forme3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 113.39 56.69" preserveAspectRatio="none">
-	<polygon fill="#FAF418" points="56.633,28.345 56.635,42.518 56.636,56.69 70.791,56.69 84.945,56.69 99.105,56.69 113.264,56.69 
-		99.105,42.518 99.105,42.518 84.949,28.347 84.945,28.349 84.945,28.345 75.507,18.897 70.789,14.175 70.788,14.174 70.785,14.171 
-		56.627,0 56.629,14.171 	"/>
-	<polygon fill="#FAF418" points="42.476,42.518 42.476,42.518 42.476,42.518 42.476,42.516 37.757,37.794 28.318,28.345 
-		28.313,28.345 28.316,28.342 14.159,14.172 14.159,14.172 0,0 0,14.172 0,28.345 0,42.518 0,56.69 14.158,56.69 28.318,56.69 
-		42.476,56.69 56.636,56.69 42.477,42.518 	"/>
-</svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.99 72" height="100%" width="100%" preserveAspectRatio="none">
+                    <polygon class="cls-1" points="71.99 36 72 54 72 72 89.99 72 107.99 72 125.99 72 143.99 72 125.99 54 125.99 54 107.99 36 107.99 36.01 107.99 36 95.99 24 89.99 18 89.99 18 89.99 18 71.99 0 71.99 18 71.99 36" />
+                    <polygon class="cls-1" points="54 54 54 54 54 54 54 54 48 48 36 36 35.99 36 36 36 18 18 18 18 0 0 0 18 0 36 0 54 0 72 18 72 36 72 54 72 72 72 54 54 54 54" />
+                </svg>
             </div>
         </section>
     </div>
@@ -576,7 +573,7 @@
         $('#container2').mousemove(vf_hover2);
 
     }
-    
+
     // FORME 3
 
     if ($('#container3').length > 0) {
@@ -594,12 +591,38 @@
 
             var vfString = positionX + "px";
             var vfStringHeight = positionY + "px";
-            $("#forme").css("width", vfString);
-            $("#forme").css("height", vfStringHeight);
+            $("#forme3").css("width", vfString);
+            $("#forme3").css("height", vfStringHeight);
             //$("#log").text("cursorX: " + cursorX + ", cursorY: " + cursorY + ", positionX:" + positionX + ", positionY: " + positionY);
         }
 
         $('#container3').mousemove(vf_hover);
+
+    }
+    
+     // FORME 3
+
+    if ($('#container4').length > 0) {
+
+        $('#container4').focus();
+
+        var vf_hover = function(m) {
+            //var cursorX = m.pageX / $(this).width();
+            var cursorX = event.pageX - $(this).offset().left;
+            //var cursorY = 1 - (m.pageY) / $(this).height();
+            var cursorY = event.pageY - $(this).offset().top;
+
+            var positionX = Math.floor(cursorX * 1);
+            var positionY = Math.floor(cursorY * 2);
+
+            var vfString = positionX + "px";
+            var vfStringHeight = positionY + "px";
+            $("#forme4").css("width", vfString);
+            $("#forme4").css("height", vfStringHeight);
+            //$("#log").text("cursorX: " + cursorX + ", cursorY: " + cursorY + ", positionX:" + positionX + ", positionY: " + positionY);
+        }
+
+        $('#container4').mousemove(vf_hover);
 
     }
 
