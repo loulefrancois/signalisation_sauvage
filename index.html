@@ -87,109 +87,7 @@
 
     </div>
 
-    <script>
-        // BLEU COULEUR
-        $("#bleu").on('click', function() {
-            $("#bleu, #rouge2, #vert2").css("display", "none");
-            $("#bleu2, #rouge, #vert").css("display", "block");
 
-            $("body").css("fill", "blue");
-            $("a").css("color", "blue");
-            $("body, #lacarte").css("color", "blue");
-            $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "blue");
-            $("#lacarte").append('<style>#lacarte:hover {background-color: blue;} </style>');
-            $("#contribuer").append('<style>#contribuer:hover {background-color: blue;}</style>').append('<style>#contribuer:hover p {color: blue;}</style>');
-            $("#formeligne3").append('<style>#formeligne3:hover svg {fill: blue; background-color: #fffcf5;} </style>');
-            $("#formeligne3").append('<style>#formeligne3 {background-color: blue;}</style>');
-            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: blue;}</style>');
-            $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: blue;} .bloctextwidth a {fill: blue;}</style>');
-        });
-
-        //BLEU RETOUR AU NOIR
-        $("#bleu2").on('click', function() {
-            $("#bleu2").css("display", "none");
-            $("#bleu").css("display", "block");
-
-            $("body").css("fill", "black");
-            $("a").css("color", "black");
-            $("body, #lacarte").css("color", "black");
-            $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "black");
-            $("#lacarte").append('<style>#lacarte:hover {background-color: black;} </style>');
-            $("#contribuer").append('<style>#contribuer:hover {background-color: black;}</style>').append('<style>#contribuer:hover p {color: black;}</style>');
-            $("#formeligne3").append('<style>#formeligne3:hover svg {fill: black; background-color: #fffcf5;} </style>');
-            $("#formeligne3").append('<style>#formeligne3 {background-color: black;}</style>');
-            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
-            $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
-        });
-
-        // ROUGE COULEUR
-        $("#rouge").on('click', function() {
-            $("#rouge, #bleu2, #vert2").css("display", "none");
-            $("#rouge2, #bleu, #vert").css("display", "block");
-
-            $("body").css("fill", "red");
-            $("a").css("color", "red");
-            $("body, #lacarte").css("color", "red");
-            $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "red");
-            $("#lacarte").append('<style>#lacarte:hover {background-color : red;}</style>');
-            $("#contribuer").append('<style>#contribuer:hover {background-color: red;}</style>').append('<style>#contribuer:hover p {color: red;}</style>');
-            $("#formeligne3").append('<style>#formeligne3:hover svg {fill: red; background-color: #fffcf5;} </style>');
-            $("#formeligne3").append('<style>#formeligne3 {background-color: red;}</style>');
-            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: red;}</style>');
-            $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: red;} .bloctextwidth a {fill: red;}</style>');
-        });
-
-        //ROUGE RETOUR AU NOIR
-        $("#rouge2").on('click', function() {
-            $("#rouge2").css("display", "none");
-            $("#rouge").css("display", "block");
-
-            $("body").css("fill", "black");
-            $("a").css("color", "black");
-            $("body, #lacarte").css("color", "black");
-            $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "black");
-            $("#lacarte").append('<style>#lacarte:hover {background-color: black;} </style>');
-            $("#contribuer").append('<style>#contribuer:hover {background-color: black;}</style>').append('<style>#contribuer:hover p {color: black;}</style>');
-            $("#formeligne3").append('<style>#formeligne3:hover svg {fill: black; background-color: #fffcf5;} </style>');
-            $("#formeligne3").append('<style>#formeligne3 {background-color: black;}</style>');
-            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
-            $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
-        });
-
-        //VERT COULEUR
-        $("#vert").on('click', function() {
-            $("#vert, #bleu2, #rouge2").css("display", "none");
-            $("#vert2, #bleu, #rouge").css("display", "block");
-
-            $("body").css("fill", "green");
-            $("a").css("color", "green");
-            $("body, #lacarte").css("color", "green");
-            $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "green");
-            $("#lacarte").append('<style>#lacarte:hover {background-color : green;}</style>');
-            $("#contribuer").append('<style>#contribuer:hover {background-color: green;}</style>').append('<style>#contribuer:hover p {color: green;}</style>');
-            $("#formeligne3").append('<style>#formeligne3:hover svg {fill: green; background-color: #fffcf5;} </style>');
-            $("#formeligne3").append('<style>#formeligne3 {background-color: green;}</style>');
-            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: green;}</style>');
-            $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: green;} .bloctextwidth a {fill: green;}</style>');
-        });
-
-        //VERT RETOUR AU NOIR
-        $("#vert2").on('click', function() {
-            $("#vert2").css("display", "none");
-            $("#vert").css("display", "block");
-
-            $("body").css("fill", "black");
-            $("a").css("color", "black");
-            $("body, #lacarte").css("color", "black");
-            $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "black");
-            $("#lacarte").append('<style>#lacarte:hover {background-color: black;} </style>');
-            $("#contribuer").append('<style>#contribuer:hover {background-color: black;}</style>').append('<style>#contribuer:hover p {color: black;}</style>');
-            $("#formeligne3").append('<style>#formeligne3:hover svg {fill: black; background-color: #fffcf5;} </style>');
-            $("#formeligne3").append('<style>#formeligne3 {background-color: black;}</style>');
-            $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
-            $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
-        });
-    </script>
 
 
     <!-- ////////////////////////////////////////////////////// -->
@@ -402,9 +300,6 @@
     </div>
 
     <!-- Forme 2 -->
-
-
-
     <div class="bloctextwidth" style="border-left: 3px solid;">
         <div class="texteforme" style="float: right; width: 400px;">
             <p style="float: right;">VR-FMX05</p>
@@ -467,11 +362,82 @@
     </div>
 
 
+    <!-- Forme 4 -->
+    <div class="bloctextwidth" style="border-left: 3px solid;">
+        <div class="texteforme" style="float: right; width: 400px;">
+            <p style="float: right;">VR-FMX05</p>
+        </div>
+        <p class="texteexplicationforme">
+            La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae. La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae.
+        </p>
+        <a href="pdf/maquette-web-dnsep.pdf" title="maquette test" target="_blank">
+            <div class="boutonpdf" style="right: 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.6 27" height="100%" width="100%" preserveAspectRatio="none">
+                    <path class="cls-1" d="M10.8,10.8ZM21.6,0,16.2,5.4l-5.4,5.4h0L5.4,5.4h0L0,0,2.7,5.4l.9,1.8,1.8,3.6h0l1.8,3.6.9,1.8,2.7,5.4,2.7-5.4.9-1.8,1.8-3.6h0L18,7.2l.9-1.8Z" />
+                    <rect class="cls-1" y="21.6" width="21.6" height="5.4" />
+                </svg>
+            </div>
+        </a>
+    </div>
+
+    <div class="blocformewidth" style="border-right: 3px solid;">
+        <section id="container4">
+            <div id="forme4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 391" height="100%" width="100%" preserveAspectRatio="none">
+                    <polygon class="cls-1" points="0 0 0 97.75 0 195.5 160.01 195.5 319.97 195.5 320 195.48 160.02 97.75 160.01 97.75 160.01 97.75 0 0" />
+                    <polygon class="cls-1" points="639.97 97.75 640 195.49 640.01 195.49 640.01 195.5 799.98 195.5 959.97 195.5 959.97 195.49 853.31 130.34 799.98 97.76 799.96 97.75 639.95 0 639.97 97.75" />
+                    <polygon class="cls-1" points="320.03 0 320.03 97.75 320.03 97.76 320.03 195.47 426.64 130.32 479.96 97.75 479.98 97.73 479.99 97.73 639.95 0 320.03 0" />
+                    <polygon class="cls-1" points="853.36 260.68 800.03 293.25 800.01 293.27 799.98 293.29 640.05 391 799.98 391 959.97 391 959.97 293.25 959.97 293.24 959.97 195.53 853.36 260.68" />
+                    <polygon class="cls-1" points="639.99 195.5 480 195.5 320.04 195.5 426.69 260.66 480.01 293.23 480.03 293.24 480.05 293.25 640.05 391 640.02 293.25 640 195.5 639.99 195.5" />
+                    <polygon class="cls-1" points="319.97 195.5 160.01 293.24 160.01 293.25 160.03 293.26 160.01 293.26 159.97 293.26 0 391 160.01 391 320.02 391 320.02 293.25 319.97 293.25 320.02 293.24 320.02 195.5 319.97 195.5" />
+                    <polygon class="cls-1" points="959.97 0 959.97 97.75 960.02 97.75 959.97 97.76 959.97 195.49 959.98 195.5 960.02 195.5 1119.99 97.76 1119.99 97.76 1119.98 97.75 1119.99 97.75 1120.01 97.75 1280 0 959.97 0" />
+                    <polygon class="cls-1" points="1119.99 195.5 960.02 195.5 960 195.51 1119.99 293.25 1280 391 1280 195.5 1119.99 195.5" />
+                </svg>
+            </div>
+        </section>
+    </div>
 
 
+    <!-- Forme 5 -->
 
+    <div class="blocformewidth" style="border-left: 3px solid;">
+        <section id="container5">
+            <div id="forme5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 113.39 56.69" preserveAspectRatio="none">
+                    <polygon points="85.035,28.345 85.033,28.348 75.59,37.793 70.865,42.516 70.864,42.517 70.863,42.518 
+	56.696,56.688 70.863,56.688 85.033,56.688 94.482,47.238 99.206,42.516 99.206,42.515 99.207,42.515 113.381,28.342 99.207,28.342 
+	85.038,28.342 " />
+                    <polygon points="70.862,14.17 70.861,14.17 70.861,14.174 70.859,14.172 56.69,28.342 56.691,28.342 70.862,28.342 
+	85.033,28.342 85.038,28.342 99.207,14.174 99.207,14.171 99.206,14.169 99.207,14.169 99.21,14.169 113.381,-0.001 99.207,-0.001 
+	85.033,-0.001 " />
+                    <polygon points="14.173,42.514 14.173,42.514 14.175,42.516 14.173,42.516 14.171,42.516 0,56.688 14.173,56.688 
+	28.348,56.688 42.519,42.516 42.52,42.514 42.521,42.514 56.689,28.344 56.69,28.342 56.689,28.342 42.521,28.342 28.348,28.342 
+	28.344,28.342 " />
+                    <polygon points="18.898,9.447 14.174,14.171 0,28.342 14.174,28.342 28.344,28.342 28.345,28.341 28.348,28.338 
+	37.792,18.894 42.515,14.17 42.517,14.168 42.521,14.165 56.685,-0.001 42.521,-0.001 28.348,-0.001 " />
+                </svg>
+            </div>
+        </section>
+    </div>
 
+    <div class="bloctextwidth" style="border-right: 3px solid;">
+        <div class="texteforme">
+            <p>VR-FL01</p>
+        </div>
+        <p class="texteexplicationforme">
+            La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae. La carte Aque etur magnihilique sam aut odit laborem elit endam fugiand ebitat acepero vitatem faccae perum voluptis et latur magnihi llestiat quae.
+        </p>
 
+        <a href="pdf/maquette-web-dnsep.pdf" title="maquette test" target="_blank">
+            <div class="boutonpdf">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.6 27" height="100%" width="100%" preserveAspectRatio="none">
+                    <path class="cls-1" d="M10.8,10.8ZM21.6,0,16.2,5.4l-5.4,5.4h0L5.4,5.4h0L0,0,2.7,5.4l.9,1.8,1.8,3.6h0l1.8,3.6.9,1.8,2.7,5.4,2.7-5.4.9-1.8,1.8-3.6h0L18,7.2l.9-1.8Z" />
+                    <rect class="cls-1" y="21.6" width="21.6" height="5.4" />
+                </svg>
+            </div>
+        </a>
+
+    </div>
 
 </body>
 
@@ -574,6 +540,7 @@
 
     }
 
+    // ////////////////////////////////////////////////////////////
     // FORME 3
 
     if ($('#container3').length > 0) {
@@ -599,8 +566,9 @@
         $('#container3').mousemove(vf_hover);
 
     }
-    
-     // FORME 3
+
+    // ////////////////////////////////////////////////////////////
+    // FORME 4
 
     if ($('#container4').length > 0) {
 
@@ -623,6 +591,33 @@
         }
 
         $('#container4').mousemove(vf_hover);
+
+    }
+
+    // ////////////////////////////////////////////////////////////
+    // FORME 5
+
+    if ($('#container5').length > 0) {
+
+        $('#container5').focus();
+
+        var vf_hover = function(m) {
+            //var cursorX = m.pageX / $(this).width();
+            var cursorX = event.pageX - $(this).offset().left;
+            //var cursorY = 1 - (m.pageY) / $(this).height();
+            var cursorY = event.pageY - $(this).offset().top;
+
+            var positionX = Math.floor(cursorX * 1);
+            var positionY = Math.floor(cursorY * 2);
+
+            var vfString = positionX + "px";
+            var vfStringHeight = positionY + "px";
+            $("#forme5").css("width", vfString);
+            $("#forme5").css("height", vfStringHeight);
+            //$("#log").text("cursorX: " + cursorX + ", cursorY: " + cursorY + ", positionX:" + positionX + ", positionY: " + positionY);
+        }
+
+        $('#container5').mousemove(vf_hover);
 
     }
 
@@ -672,6 +667,110 @@
     $("#fleche").css("left", positionFlecheHorizontale);
     var positionFlecheVerticale = ecranHeight - 60;
     $("#fleche").css("top", positionFlecheVerticale);
+</script>
+
+<script>
+    // BLEU COULEUR
+    $("#bleu").on('click', function() {
+        $("#bleu, #rouge2, #vert2").css("display", "none");
+        $("#bleu2, #rouge, #vert").css("display", "block");
+
+        $("body").css("fill", "blue");
+        $("a").css("color", "blue");
+        $("body, #lacarte").css("color", "blue");
+        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "blue");
+        $("#lacarte").append('<style>#lacarte:hover {background-color: blue;} </style>');
+        $("#contribuer").append('<style>#contribuer:hover {background-color: blue;}</style>').append('<style>#contribuer:hover p {color: blue;}</style>');
+        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: blue; background-color: #fffcf5;} </style>');
+        $("#formeligne3").append('<style>#formeligne3 {background-color: blue;}</style>');
+        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: blue;}</style>');
+        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: blue;} .bloctextwidth a {fill: blue;}</style>');
+    });
+
+    //BLEU RETOUR AU NOIR
+    $("#bleu2").on('click', function() {
+        $("#bleu2").css("display", "none");
+        $("#bleu").css("display", "block");
+
+        $("body").css("fill", "black");
+        $("a").css("color", "black");
+        $("body, #lacarte").css("color", "black");
+        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "black");
+        $("#lacarte").append('<style>#lacarte:hover {background-color: black;} </style>');
+        $("#contribuer").append('<style>#contribuer:hover {background-color: black;}</style>').append('<style>#contribuer:hover p {color: black;}</style>');
+        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: black; background-color: #fffcf5;} </style>');
+        $("#formeligne3").append('<style>#formeligne3 {background-color: black;}</style>');
+        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
+        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
+    });
+
+    // ROUGE COULEUR
+    $("#rouge").on('click', function() {
+        $("#rouge, #bleu2, #vert2").css("display", "none");
+        $("#rouge2, #bleu, #vert").css("display", "block");
+
+        $("body").css("fill", "red");
+        $("a").css("color", "red");
+        $("body, #lacarte").css("color", "red");
+        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "red");
+        $("#lacarte").append('<style>#lacarte:hover {background-color : red;}</style>');
+        $("#contribuer").append('<style>#contribuer:hover {background-color: red;}</style>').append('<style>#contribuer:hover p {color: red;}</style>');
+        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: red; background-color: #fffcf5;} </style>');
+        $("#formeligne3").append('<style>#formeligne3 {background-color: red;}</style>');
+        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: red;}</style>');
+        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: red;} .bloctextwidth a {fill: red;}</style>');
+    });
+
+    //ROUGE RETOUR AU NOIR
+    $("#rouge2").on('click', function() {
+        $("#rouge2").css("display", "none");
+        $("#rouge").css("display", "block");
+
+        $("body").css("fill", "black");
+        $("a").css("color", "black");
+        $("body, #lacarte").css("color", "black");
+        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "black");
+        $("#lacarte").append('<style>#lacarte:hover {background-color: black;} </style>');
+        $("#contribuer").append('<style>#contribuer:hover {background-color: black;}</style>').append('<style>#contribuer:hover p {color: black;}</style>');
+        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: black; background-color: #fffcf5;} </style>');
+        $("#formeligne3").append('<style>#formeligne3 {background-color: black;}</style>');
+        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
+        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
+    });
+
+    //VERT COULEUR
+    $("#vert").on('click', function() {
+        $("#vert, #bleu2, #rouge2").css("display", "none");
+        $("#vert2, #bleu, #rouge").css("display", "block");
+
+        $("body").css("fill", "green");
+        $("a").css("color", "green");
+        $("body, #lacarte").css("color", "green");
+        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "green");
+        $("#lacarte").append('<style>#lacarte:hover {background-color : green;}</style>');
+        $("#contribuer").append('<style>#contribuer:hover {background-color: green;}</style>').append('<style>#contribuer:hover p {color: green;}</style>');
+        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: green; background-color: #fffcf5;} </style>');
+        $("#formeligne3").append('<style>#formeligne3 {background-color: green;}</style>');
+        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: green;}</style>');
+        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: green;} .bloctextwidth a {fill: green;}</style>');
+    });
+
+    //VERT RETOUR AU NOIR
+    $("#vert2").on('click', function() {
+        $("#vert2").css("display", "none");
+        $("#vert").css("display", "block");
+
+        $("body").css("fill", "black");
+        $("a").css("color", "black");
+        $("body, #lacarte").css("color", "black");
+        $("#ligne5formegauche, #textesousformeligne4, #ligne5formedroite").css("background-color", "black");
+        $("#lacarte").append('<style>#lacarte:hover {background-color: black;} </style>');
+        $("#contribuer").append('<style>#contribuer:hover {background-color: black;}</style>').append('<style>#contribuer:hover p {color: black;}</style>');
+        $("#formeligne3").append('<style>#formeligne3:hover svg {fill: black; background-color: #fffcf5;} </style>');
+        $("#formeligne3").append('<style>#formeligne3 {background-color: black;}</style>');
+        $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
+        $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
+    });
 </script>
 
 
