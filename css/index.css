@@ -610,7 +610,8 @@ p#vert2 {
 /* ////////////////////////////////////////////////////// */
 
 .couleur2 {
-    fill: grey;
+    fill: black;
+    opacity: 0.2;
     /* stroke: black;
     stroke-width: 1; */
 }

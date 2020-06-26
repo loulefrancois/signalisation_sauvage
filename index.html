@@ -804,7 +804,7 @@
 
         var colors = ["green", "red"];
         var rand = Math.floor(Math.random() * colors.length);
-        $(".couleur2").css("fill", colors[rand]);
+        $(".couleur2").css("fill", colors[rand]).css("opacity", "1");
     });
 
     //BLEU RETOUR AU NOIR
@@ -823,7 +823,7 @@
         $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
         $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
         
-        $(".couleur2").css("fill", "grey");
+        $(".couleur2").css("fill", "black").css("opacity", "0.2");
     });
 
     // ROUGE COULEUR
@@ -844,7 +844,7 @@
 
         var colors = ["green", "blue"];
         var rand = Math.floor(Math.random() * colors.length);
-        $(".couleur2").css("fill", colors[rand]);
+        $(".couleur2").css("fill", colors[rand]).css("opacity", "1");
     });
 
     //ROUGE RETOUR AU NOIR
@@ -863,7 +863,7 @@
         $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
         $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
         
-        $(".couleur2").css("fill", "grey");
+        $(".couleur2").css("fill", "black").css("opacity", "0.2");
     });
 
     //VERT COULEUR
@@ -884,7 +884,7 @@
 
         var colors = ["red", "blue"];
         var rand = Math.floor(Math.random() * colors.length);
-        $(".couleur2").css("fill", colors[rand]);
+        $(".couleur2").css("fill", colors[rand]).css("opacity", "1");
     });
 
     //VERT RETOUR AU NOIR
@@ -903,7 +903,7 @@
         $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
         $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
         
-        $(".couleur2").css("fill", "grey");
+        $(".couleur2").css("fill", "black").css("opacity", "0.2");
     });
 
 </script>
