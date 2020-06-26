@@ -196,8 +196,7 @@ p#vert2 {
 
 #vr01 p:hover,
 #vr02 p:hover,
-#vr03 p:hover {
-}
+#vr03 p:hover {}
 
 p#bleu2,
 p#rouge2,
@@ -524,7 +523,11 @@ p#vert2 {
 #container4,
 #container5,
 #container6,
-#container7 {
+#container7,
+#container8,
+#container9,
+#container10,
+#container11 {
     box-sizing: border-box;
     width: 1000px;
     height: 400px;
@@ -557,12 +560,14 @@ p#vert2 {
     width: 25%;
 }
 
-.blocformewidth {
+.blocformewidth,
+.blocformewidthblanc {
     width: 75%;
 }
 
 .bloctextwidth,
-.blocformewidth {
+.blocformewidth,
+.blocformewidthblanc {
     border: 1.5px solid;
     display: inline;
     height: 400px;
@@ -609,12 +614,24 @@ p#vert2 {
 
 /* ////////////////////////////////////////////////////// */
 
-.couleur2 {
-    fill: black;
-    opacity: 0.2;
+.couleurblanc {
+    fill: #fffcf5;
     /* stroke: black;
     stroke-width: 1; */
 }
+
+
+.blocformewidthblanc svg {
+    background-color: #fffcf5;
+    background-image: radial-gradient(circle, black 20%, transparent 10%), radial-gradient(circle, black 20%, transparent 10%);
+    background-size: 10px 10px;
+    background-position: 0 0, 5px 5px;
+}
+
+
+
+
+
 
 /* ////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////// */

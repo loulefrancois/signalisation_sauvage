@@ -464,14 +464,18 @@
 
     <!-- Forme 7 -->
 
-    <div class="blocformewidth" style="border-left: 3px solid;">
+    <div class="blocformewidthblanc" style="border-left: 3px solid;">
         <section id="container7">
             <div id="forme7">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.99 72" preserveAspectRatio="none" width="100%" height="100%">
-                    <polygon class="couleur1" points="125.99 18 143.99 0 125.99 9 119.99 12 107.99 18 107.99 18 95.99 24 107.99 36 107.99 36 107.99 36 125.99 18 125.99 18 125.98 18 125.99 18 125.99 18" />
-                    <polygon class="couleur2" points="54 17.99 54 18 54 18 54 18 53.99 18 47.99 24 54 27 71.99 36 71.99 36 71.99 36 89.99 45 95.99 48 107.99 54 107.99 54 119.99 60 125.99 63 143.99 72 125.99 54 125.99 54 125.99 54 107.99 36 107.99 36.01 107.99 36 107.99 36 95.99 24 89.99 18 89.99 18 89.98 18 71.99 0 54 17.99" />
-                    <polygon class="couleur2" points="18 54 18 54 18 54 18 54 18 54 0 72 18 63 24 60 36 54 36 54 48 48 36 36 36 36 35.99 36 18 54" />
-                    <polygon class="couleur1" points="18 18 18 18 18 18 18 18 36 36 36 35.99 36 36 36 36 48 48 54 54 54 54 72 72 89.99 54 89.99 54 89.99 54 89.99 54 90 54 95.99 48 89.99 45 71.99 36 71.99 36 54 27 47.99 24 36 18 35.99 18 24 12 18 9 0 0 18 18" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.99 72" width="100%" height="100%" preserveAspectRatio="none">
+                    <polygon class="cls-1" points="125.99 18 143.99 0 125.99 9 119.99 12 107.99 18 107.99 18 95.99 24 107.99 36 107.99 36 107.99 36 125.99 18 125.99 18 125.98 18 125.99 18 125.99 18" />
+                    <polygon class="cls-1" points="18 18 18 18 18 18 18 18 36 36 36 35.99 36 36 36 36 48 48 54 54 54 54 72 72 89.99 54 89.99 54 89.99 54 89.99 54 90 54 95.99 48 89.99 45 71.99 36 71.99 36 54 27 47.99 24 36 18 35.99 18 24 12 18 9 0 0 18 18" />
+                    <polygon class="couleurblanc" points="0 0 36 36 0 72 0 0" />
+                    <polygon class="couleurblanc" points="0 0 71.99 0 47.99 24 0 0" />
+                    <polygon class="couleurblanc" points="95.99 24 143.99 0 71.99 0 95.99 24" />
+                    <polygon class="couleurblanc" points="107.99 36 143.99 0 143.99 72 107.99 36" />
+                    <polygon class="couleurblanc" points="72 72 95.99 48 143.99 72 72 72" />
+                    <polygon class="couleurblanc" points="48 48 72 72 0 72 48 48" />
                 </svg>
             </div>
         </section>
@@ -496,6 +500,10 @@
 
     </div>
 
+    
+    <!-- Forme 8 -->
+    
+
 </body>
 
 
@@ -516,6 +524,7 @@
         $('#container5').width(widthContainerForme);
         $('#container6').width(widthContainerForme);
         $('#container7').width(widthContainerForme);
+        $('#container8').width(widthContainerForme);
     });
 
     // Height et display block/none image hover test
@@ -734,6 +743,33 @@
 
     }
 
+    // ////////////////////////////////////////////////////////////
+    // FORME 8
+
+    if ($('#container8').length > 0) {
+
+        $('#container8').focus();
+
+        var vf_hover = function(m) {
+            //var cursorX = m.pageX / $(this).width();
+            var cursorX = event.pageX - $(this).offset().left;
+            //var cursorY = 1 - (m.pageY) / $(this).height();
+            var cursorY = event.pageY - $(this).offset().top;
+
+            var positionX = Math.floor(cursorX * 1);
+            var positionY = Math.floor(cursorY * 2);
+
+            var vfString = positionX + "px";
+            var vfStringHeight = positionY + "px";
+            $("#forme8").css("width", vfString);
+            $("#forme8").css("height", vfStringHeight);
+            //$("#log").text("cursorX: " + cursorX + ", cursorY: " + cursorY + ", positionX:" + positionX + ", positionY: " + positionY);
+        }
+
+        $('#container8').mousemove(vf_hover);
+
+    }
+
 
     // Taille height et width de l'écran
     var ecranHeight = $(window).height();
@@ -761,7 +797,6 @@
         var tailleAutoFont3 = ecranWidth * 6 / 1700 + "em";
         $("#lessignesdedeplacement p").css("font-size", tailleAutoFont3);
     }
-
 </script>
 
 <script>
@@ -782,7 +817,6 @@
     $("#fleche").css("left", positionFlecheHorizontale);
     var positionFlecheVerticale = ecranHeight - 60;
     $("#fleche").css("top", positionFlecheVerticale);
-
 </script>
 
 <script>
@@ -802,9 +836,7 @@
         $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: blue;}</style>');
         $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: blue;} .bloctextwidth a {fill: blue;}</style>');
 
-        var colors = ["green", "red"];
-        var rand = Math.floor(Math.random() * colors.length);
-        $(".couleur2").css("fill", colors[rand]).css("opacity", "1");
+        $(".blocformewidthblanc svg").css("background-image", "radial-gradient(circle, blue 20%, transparent 10%), radial-gradient(circle, blue 20%, transparent 10%)");
     });
 
     //BLEU RETOUR AU NOIR
@@ -822,8 +854,8 @@
         $("#formeligne3").append('<style>#formeligne3 {background-color: black;}</style>');
         $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
         $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
-        
-        $(".couleur2").css("fill", "black").css("opacity", "0.2");
+
+        $(".blocformewidthblanc svg").css("background-image", "radial-gradient(circle, black 20%, transparent 10%), radial-gradient(circle, black 20%, transparent 10%)");
     });
 
     // ROUGE COULEUR
@@ -842,9 +874,7 @@
         $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: red;}</style>');
         $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: red;} .bloctextwidth a {fill: red;}</style>');
 
-        var colors = ["green", "blue"];
-        var rand = Math.floor(Math.random() * colors.length);
-        $(".couleur2").css("fill", colors[rand]).css("opacity", "1");
+        $(".blocformewidthblanc svg").css("background-image", "radial-gradient(circle, red 20%, transparent 10%), radial-gradient(circle, red 20%, transparent 10%)");
     });
 
     //ROUGE RETOUR AU NOIR
@@ -862,8 +892,8 @@
         $("#formeligne3").append('<style>#formeligne3 {background-color: black;}</style>');
         $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
         $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
-        
-        $(".couleur2").css("fill", "black").css("opacity", "0.2");
+
+        $(".blocformewidthblanc svg").css("background-image", "radial-gradient(circle, black 20%, transparent 10%), radial-gradient(circle, black 20%, transparent 10%)");
     });
 
     //VERT COULEUR
@@ -882,9 +912,7 @@
         $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: green;}</style>');
         $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: green;} .bloctextwidth a {fill: green;}</style>');
 
-        var colors = ["red", "blue"];
-        var rand = Math.floor(Math.random() * colors.length);
-        $(".couleur2").css("fill", colors[rand]).css("opacity", "1");
+        $(".blocformewidthblanc svg").css("background-image", "radial-gradient(circle, green 20%, transparent 10%), radial-gradient(circle, green 20%, transparent 10%)");
     });
 
     //VERT RETOUR AU NOIR
@@ -902,10 +930,9 @@
         $("#formeligne3").append('<style>#formeligne3 {background-color: black;}</style>');
         $("#systemedepeinture").append('<style>#systemedepeinture:hover {background-color: black;}</style>');
         $(".bloctextwidth").append('<style>.bloctextwidth:hover {background-color: black;} .bloctextwidth a {fill: black;}</style>');
-        
-        $(".couleur2").css("fill", "black").css("opacity", "0.2");
-    });
 
+        $(".blocformewidthblanc svg").css("background-image", "radial-gradient(circle, black 20%, transparent 10%), radial-gradient(circle, black 20%, transparent 10%)");
+    });
 </script>
 
 
