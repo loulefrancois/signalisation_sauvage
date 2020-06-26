@@ -523,7 +523,8 @@ p#vert2 {
 #container3,
 #container4,
 #container5,
-#container6 {
+#container6,
+#container7 {
     box-sizing: border-box;
     width: 1000px;
     height: 400px;
@@ -536,7 +537,11 @@ p#vert2 {
 #forme3,
 #forme4,
 #forme5,
-#forme6 {
+#forme6,
+#forme7,
+#forme8,
+#forme9,
+#forme10 {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -602,6 +607,13 @@ p#vert2 {
     display: block;
 }
 
+/* ////////////////////////////////////////////////////// */
+
+.couleur2 {
+    fill: grey;
+    /* stroke: black;
+    stroke-width: 1; */
+}
 
 /* ////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////// */
