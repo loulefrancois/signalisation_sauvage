@@ -36,10 +36,10 @@
 
     <header>
         <a href="index.html">
-            <h1>veloroute <span class="mediasans-semicondensed-italic">systeme</span></h1>
+            <h1>veloroute <span class="mediasans-semicondensed-italic">marquage</span></h1>
         </a>
 
-        <h2>carte collaborative des veloroutes toulousaines</h2>
+        <h2>tracés participatif des veloroutes toulousaines</h2>
 
         <div id="forme_01">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 294 46">
@@ -54,13 +54,13 @@
     <!-- ////////////////////////////////////////////////////// -->
     <!-- ////////////////////////////////////////////////////// -->
 
-    <p id="fleche">
+    <div id="fleche">
         <a class="js-scrollTo" href="#navbar">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.33 65.18">
                 <polygon points="67.33 32.15 67.33 0 33.66 32.15 0 0 0 32.15 33.66 65.19 67.33 32.15" />
             </svg>
         </a>
-    </p>
+    </div>
 
     <!-- ////////////////////////////////////////////////////// -->
     <!-- ////////////////////////////////////////////////////// -->
@@ -98,7 +98,7 @@
 
     <div id="carte">
 
-        <iframe width="100%" height="100%" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/la-carte-test_455732?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+        <iframe width="100%" height="100%" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/autoroute-a-velos_446120?scaleControl=true&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=true&onLoadPanel=undefined&captionBar=false&datalayers=1243447%2C1243641%2C1243741%2C1244189&measureControl=false&locateControl=false&fullscreenControl=false&editinosmControl=false"></iframe>
         
     </div>
 
@@ -803,6 +803,7 @@
         var tailleAutoFont3 = ecranWidth * 6 / 1700 + "em";
         $("#lessignesdedeplacement p").css("font-size", tailleAutoFont3);
     }
+
 </script>
 
 <script>
@@ -819,10 +820,9 @@
     });
 
     // Position de la flèche centrée
-    var positionFlecheHorizontale = ecranWidth / 2 - 60;
-    $("#fleche").css("left", positionFlecheHorizontale);
-    var positionFlecheVerticale = ecranHeight - 60;
-    $("#fleche").css("top", positionFlecheVerticale);
+    var positionFlecheHorizontale = ecranWidth / 2 - 30;
+    $("#fleche").css("left", positionFlecheHorizontale);;
+
 </script>
 
 <script>
@@ -939,6 +939,7 @@
 
         $(".blocformewidthblanc svg").css("background-image", "radial-gradient(circle, black 20%, transparent 10%), radial-gradient(circle, black 20%, transparent 10%)");
     });
+
 </script>
 
 
