@@ -87,6 +87,7 @@ header {
     top: 0;
     background-color: #fffcf5;
     z-index: 1000;
+    width: 100%;
 }
 
 h1,
@@ -113,7 +114,7 @@ h2 {
 
 h1 {
     font-family: 'Mediasans-italic';
-    width: 31%;
+    width: 28%;
     border-left: 3px solid;
 }
 
@@ -127,13 +128,14 @@ h2 {
 }
 
 #forme_01 {
-    width: 19%;
+    width: 22%;
     border-right: 3px solid;
 }
 
 #forme_01 svg {
     height: 100%;
 }
+
 
 /* ////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////// */
@@ -145,8 +147,12 @@ h2 {
     width: 60px;
     z-index: 900;
     position: absolute;
-    bottom: 0em;
+    bottom: 1em;
     text-align: center;
+}
+
+#fleche:hover {
+    bottom: 0.5em;
 }
 
 /* ////////////////////////////////////////////////////// */
@@ -527,7 +533,9 @@ p#vert2 {
 #container8,
 #container9,
 #container10,
-#container11 {
+#container11,
+#container12,
+#container13 {
     box-sizing: border-box;
     width: 1000px;
     height: 400px;
@@ -544,16 +552,19 @@ p#vert2 {
 #forme7,
 #forme8,
 #forme9,
-#forme10 {
+#forme10,
+#forme11,
+#forme12,
+#forme13 {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
     max-width: 1500px;
     min-width: 200px;
-    max-height: 400px;
+    max-height: 393px;
     min-height: 50px;
     height: 205px;
-    width: 350px;
+    width: 390px;
 }
 
 .bloctextwidth {
@@ -667,6 +678,18 @@ p#vert2 {
     #textesignesdeplacement,
     #formeintrosignedeplacement {
         height: 5.55em;
+    }
+
+    #fleche {
+        width: 45px;
+    }
+
+    #formeligne4,
+    #ligne5formegauche,
+    #textesousformeligne4,
+    #ligne5formedroite {
+        height: 35.5em;
+
     }
 }
 
