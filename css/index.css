@@ -147,6 +147,7 @@ p#fleche {
     position: absolute;
     bottom: 0em;
     text-align: center;
+    border: 3px solid yellow;
 }
 
 /* ////////////////////////////////////////////////////// */
