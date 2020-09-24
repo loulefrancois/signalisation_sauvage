@@ -36,34 +36,36 @@ a {
 /* ////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////// */
 
-@font-face {
-    font-family: 'Mediasans-italic';
-    src: url("../fonts/mediasans-italic-TRIAL.otf");
-}
+
 
 @font-face {
     font-family: 'Mediasans-semicondensed-italic';
-    src: url("../fonts/mediasanssemicondensed-italic-TRIAL.otf");
+    src: url("../fonts/mediasanssemicondensed-italic.otf");
 }
 
 @font-face {
     font-family: 'Mediasans-semicondensed-light';
-    src: url("../fonts/mediasanssemicondensed-light-TRIAL.otf");
+    src: url("../fonts/mediasanssemicondensed-light.otf");
+}
+
+@font-face {
+    font-family: 'Mediasans-semicondensed-bold';
+    src: url("../fonts/mediasanssemicondensed-bold.otf");
 }
 
 @font-face {
     font-family: 'Mediasans-extracondensed-blackitalic';
-    src: url("../fonts/mediasansextracondensed-blackitalic-TRIAL.otf");
+    src: url("../fonts/mediasansextracondensed-blackitalic.otf");
 }
 
 @font-face {
     font-family: 'Mediasans-condensed-bolditalic';
-    src: url("../fonts/mediasanscondensed-bolditalic-TRIAL.otf");
+    src: url("../fonts/mediasanscondensed-bolditalic.otf");
 }
 
 @font-face {
     font-family: 'Mediasans-condensed-regular';
-    src: url("../fonts/mediasanscondensed-regular-TRIAL.otf");
+    src: url("../fonts/mediasanscondensed-regular.otf");
 }
 
 @font-face {
@@ -71,10 +73,7 @@ a {
     src: url("../fonts/mediasans-regular-TRIAL.otf");
 }
 
-@font-face {
-    font-family: 'Traulha-regular';
-    src: url("../fonts/Traulha-Regulara.otf");
-}
+
 
 /* ////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////// */
@@ -320,7 +319,7 @@ p#vert2 {
     overflow: hidden;
     border-left: 0;
     text-align: right;
-    font-family: 'Mediasans-condensed-bolditalic';
+    font-family: 'Mediasans-extracondensed-blackitalic';
     border-right: 3px solid;
 }
 
