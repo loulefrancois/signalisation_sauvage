@@ -36,7 +36,7 @@
 
     <header>
         <a href="index.html">
-            <h1>véloroute <span class="mediasans-semicondensed-italic">marquage</span></h1>
+            <h1>véloroute <span class="mediasans-semicondensed-light">marquage</span></h1>
         </a>
 
         <h2>tracés participatifs des véloroutes toulousaines</h2>
@@ -260,7 +260,7 @@
 
     <div id="textesignesdeplacement">
         <p>
-            Tous les signes suivants sont traçables à partir d'une même grille de tracé et permettent de répondre à un grand nombre de situations. 
+            Tous les signes suivants sont traçables à partir d'une même grille de tracé et permettent de répondre à un grand nombre de situations.
         </p>
     </div>
 
@@ -272,6 +272,14 @@
 
     <!-- Forme 1 -->
     <div class="blocformewidth" style="border-left: 3px solid;">
+
+        <!-- //////////////////////////////////// -->
+        <div id="ligne_haut1"></div>
+        <div id="ligne_bas1"></div>
+        <div id="ligne_gauche1"></div>
+        <div id="ligne_droite1"></div>
+        <!-- //////////////////////////////////// -->
+
         <section id="container">
             <div id="forme">
                 <svg version="1.1" id="no-aspect-ratio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 144 72">
@@ -320,6 +328,8 @@
     </div>
 
     <div class="blocformewidth" style="border-right: 3px solid;">
+        <div id="ligne_haut2"></div>
+
         <section id="container2">
             <div id="forme2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 339.89 169.96" height="100%" width="100%" preserveAspectRatio="none">
@@ -785,6 +795,8 @@
     // ////////////////////////////////////////////////////////////
     // FORME 1
 
+
+
     if ($('#container').length > 0) {
 
         $('#container').focus();
@@ -802,12 +814,45 @@
             var vfStringHeight = positionY + "px";
             $("#forme").css("width", vfString);
             $("#forme").css("height", vfStringHeight);
+
             //$("#log").text("cursorX: " + cursorX + ", cursorY: " + cursorY + ", positionX:" + positionX + ", positionY: " + positionY);
+
+            var formeTopActuel = $("#forme").offset().top;
         }
 
         $('#container').mousemove(vf_hover);
 
     }
+    // ////////////////////////////////////////////////////////////
+    // ////////////////////////////////////////////////////////////
+
+    if ($('#container').length > 0) {
+
+        $('#container').focus();
+
+        var barres = function() {
+
+            var formeTop = $("#forme").offset().top - $("#container").offset().top - 4 + "px";
+            $("#ligne_haut1").css("top", formeTop);
+
+            var formeBottom = $("#forme").offset().top - $("#container").offset().top - 4 + "px";
+            $("#ligne_bas1").css("bottom", formeBottom);
+
+            var formeLeft = $("#forme").offset().left - $("#container").offset().left - 4 + "px";
+            $("#ligne_gauche1").css("left", formeLeft);
+
+            var formeright = $("#forme").offset().left - $("#container").offset().left - 4 + "px";
+            $("#ligne_droite1").css("right", formeLeft);
+
+            $("#ligne_haut1,#ligne_bas1,#ligne_gauche1,#ligne_droite1").css("display", "block");
+
+        }
+
+        $('#container').mousemove(barres);
+    }
+
+    // ////////////////////////////////////////////////////////////
+    // ////////////////////////////////////////////////////////////
 
     // ////////////////////////////////////////////////////////////
     // FORME 2
@@ -834,6 +879,29 @@
         $('#container2').mousemove(vf_hover2);
 
     }
+
+    // ////////////////////////////////////////////////////////////
+    // ////////////////////////////////////////////////////////////
+
+
+    if ($('#container2').length > 0) {
+
+        $('#container2').focus();
+
+        var barre_haut2 = function(m) {
+
+            var formeTop = $("#forme2").offset().top - $("#container2").offset().top - 4 + "px";
+            $("#ligne_haut2").css("top", formeTop);
+            $("#ligne_haut2").css("display", "block");
+
+        }
+
+        $('#container2').mousemove(barre_haut2);
+    }
+
+
+    // ////////////////////////////////////////////////////////////
+    // ////////////////////////////////////////////////////////////
 
     // ////////////////////////////////////////////////////////////
     // FORME 3

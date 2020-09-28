@@ -112,7 +112,7 @@ h2 {
 }
 
 h1 {
-    font-family: 'Mediasans-italic';
+    font-family: 'Mediasans-semicondensed-bold';
     width: 28%;
     border-left: 3px solid;
 }
@@ -122,8 +122,8 @@ h2 {
     width: 50%;
 }
 
-.mediasans-semicondensed-italic {
-    font-family: 'Mediasans-semicondensed-italic';
+.mediasans-semicondensed-light {
+    font-family: 'Mediasans-semicondensed-light';
 }
 
 #forme_01 {
@@ -481,6 +481,36 @@ p#vert2 {
 /* /////////////////////// FORMES /////////////////////// */
 /* ////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+#ligne_haut1,
+#ligne_bas1,
+#ligne_gauche1,
+#ligne_droite1 {
+    position: absolute;
+    display: none;
+    border: 1px solid;
+    z-index: 900;
+}
+
+#ligne_haut1,
+#ligne_bas1 {
+    width: 100%;
+    height: 1px;
+}
+
+#ligne_gauche1,
+#ligne_droite1 {
+    height: 100%;
+    width: 1px;
+}
+
+
+/* ////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
 
 #lessignesdedeplacement,
 #textesignesdeplacement,
